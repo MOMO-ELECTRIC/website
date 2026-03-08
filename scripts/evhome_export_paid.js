@@ -109,7 +109,7 @@ async function extractRowsFromCurrentPage(page) {
       applicationId: record['Application ID'] || '',
       claimDate: record['Claim Date'] || '',
       submittedDate: record['Submitted Date'] || '',
-      installationSite: record['Installation Site'] || '',
+      installationSite: record['Installation Site Address'] || record['Installation Site'] || '',
       employeeName: record['Employee Name'] || '',
       rebateAmount: record['Rebate Amount'] || '',
       status: record['Application Status'] || record['Status'] || '',
