@@ -1,6 +1,6 @@
 # evhome automation (first pass)
 
-This script logs into `https://evhome.sce.com/`, reads the dashboard table, and exports rows whose status is `Paid`.
+This script logs into `https://apply.evhome.sce.com/`, reads the dashboard table, and exports rows whose status is `Paid`.
 
 ## Requirements
 

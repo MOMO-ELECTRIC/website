@@ -5,7 +5,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright-core';
 
-const EVHOME_URL = 'https://evhome.sce.com/';
+const EVHOME_URL = 'https://apply.evhome.sce.com/';
 const DEFAULT_OUTPUT = path.resolve(process.cwd(), 'output', 'evhome_paid_projects.json');
 const DEFAULT_DEBUG_DIR = path.resolve(process.cwd(), 'output', 'debug');
 
