@@ -1,0 +1,513 @@
+{
+  "generatedAt": "2026-03-08T20:46:11.615Z",
+  "totalEvhomePaid": 23,
+  "totalLarkRecords": 64,
+  "matches": [
+    {
+      "applicationId": "CRH-041379",
+      "evhomeAddress": "1233 S Willow Ave, West Covina, CA, 91790",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recP0b0kO8",
+        "larkAddress": "1233 S Willow Ave, West Covina, CA 91790 ",
+        "customerName": "XIAOFANG HE",
+        "customerId": "C20260205085",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recP0b0kO8",
+          "larkAddress": "1233 S Willow Ave, West Covina, CA 91790 ",
+          "customerName": "XIAOFANG HE",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-041213",
+      "evhomeAddress": "1649 E Merced Ave, West Covina, CA, 91791",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recHCTOY1r",
+        "larkAddress": "1649 E Merced Ave, West Covina, CA 91791 ",
+        "customerName": "YANA CHU",
+        "customerId": "C20260130079",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recHCTOY1r",
+          "larkAddress": "1649 E Merced Ave, West Covina, CA 91791 ",
+          "customerName": "YANA CHU",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-040915",
+      "evhomeAddress": "57 Oak Cliff Dr, Pomona, CA, 91766",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recwXaHq6v",
+        "larkAddress": "57 Oak Cliff Dr, Pomona, CA 91766",
+        "customerName": "SHU TING CHIU",
+        "customerId": "C20260130078",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recwXaHq6v",
+          "larkAddress": "57 Oak Cliff Dr, Pomona, CA 91766",
+          "customerName": "SHU TING CHIU",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-039750",
+      "evhomeAddress": "620 Citadel Dr, Walnut, CA, 91789",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recJlpWyCD",
+        "larkAddress": "620 Citadel Dr, Walnut, CA 91789",
+        "customerName": "SHI SHYAN WANG",
+        "customerId": "C20260116062",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recJlpWyCD",
+          "larkAddress": "620 Citadel Dr, Walnut, CA 91789",
+          "customerName": "SHI SHYAN WANG",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-039279",
+      "evhomeAddress": "15605 Reed Dr, Fontana, CA, 92336",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recPp2mnfP",
+        "larkAddress": "15605 Reed Dr, Fontana, CA 92336",
+        "customerName": "HAI LIN",
+        "customerId": "C20260108059",
+        "progress": "待验收",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recPp2mnfP",
+          "larkAddress": "15605 Reed Dr, Fontana, CA 92336",
+          "customerName": "HAI LIN",
+          "progress": "待验收",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038832",
+      "evhomeAddress": "23455 Robinbrook Pl, Diamond Bar, CA, 91765",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv7Ad1IeuJqR",
+        "larkAddress": "23455 Robinbrook Pl Diamond Bar CA 91765 ",
+        "customerName": "chen zou",
+        "customerId": "C20260106053",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv7Ad1IeuJqR",
+          "larkAddress": "23455 Robinbrook Pl Diamond Bar CA 91765 ",
+          "customerName": "chen zou",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038558",
+      "evhomeAddress": "1026 S TERRI ANN DR, WEST COVINA, CA, 91791",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recjjjIHpL",
+        "larkAddress": "1026 S TERRI ANN DR, WEST COVINA, CA 91791",
+        "customerName": "ZUNYI LIU",
+        "customerId": "C20251229042",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recjjjIHpL",
+          "larkAddress": "1026 S TERRI ANN DR, WEST COVINA, CA 91791",
+          "customerName": "ZUNYI LIU",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038131",
+      "evhomeAddress": "16573 ELM HAVEN DR, Hacienda Heights, CA, 91745",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv6gcxT3WdAf",
+        "larkAddress": "16573 ELM HAVEN DR, Hacienda Heights, CA 91745",
+        "customerName": "YAOWU DU",
+        "customerId": "C20251223037",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv6gcxT3WdAf",
+          "larkAddress": "16573 ELM HAVEN DR, Hacienda Heights, CA 91745",
+          "customerName": "YAOWU DU",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038091",
+      "evhomeAddress": "5736 Rosebud Ct, CHINO HILLS, CA, 91709",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv7AK7xgDvAw",
+        "larkAddress": "5736 Rosebud Ct, CHINO HILLS, CA 91709\n",
+        "customerName": "Esther Liang",
+        "customerId": "C20260106055",
+        "progress": "已上传待回款",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv7AK7xgDvAw",
+          "larkAddress": "5736 Rosebud Ct, CHINO HILLS, CA 91709\n",
+          "customerName": "Esther Liang",
+          "progress": "已上传待回款",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037823",
+      "evhomeAddress": "1347 BEVERLY AVE, ONTARIO, CA, 91762",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv6g5Y39kGb5",
+        "larkAddress": "1347 BEVERLY AVE ONTARIO CA 91762",
+        "customerName": "SHUPING FENG",
+        "customerId": "C20251223036",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv6g5Y39kGb5",
+          "larkAddress": "1347 BEVERLY AVE ONTARIO CA 91762",
+          "customerName": "SHUPING FENG",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037774",
+      "evhomeAddress": "2033 Bolanos Ave, Rowland Heights, CA, 91748",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recv6g2eDKobti",
+        "larkAddress": "2033 Bolanos  Ave Rowland Heights. Ca91748",
+        "customerName": "Youmei Y Liu",
+        "customerId": "C20251223035",
+        "progress": "完工大吉",
+        "score": 80
+      },
+      "candidates": [
+        {
+          "recordId": "recv6g2eDKobti",
+          "larkAddress": "2033 Bolanos  Ave Rowland Heights. Ca91748",
+          "customerName": "Youmei Y Liu",
+          "progress": "完工大吉",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037527",
+      "evhomeAddress": "914 Gonzales St, Placentia, CA, 92870",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recv3I7nrXMJZG",
+        "larkAddress": "914 Gonzales st placentia ca 92870yi",
+        "customerName": "Juan Carlos herrera santiago",
+        "customerId": "C20251126014",
+        "progress": "完工大吉",
+        "score": 80
+      },
+      "candidates": [
+        {
+          "recordId": "recv3I7nrXMJZG",
+          "larkAddress": "914 Gonzales st placentia ca 92870yi",
+          "customerName": "Juan Carlos herrera santiago",
+          "progress": "完工大吉",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036818",
+      "evhomeAddress": "20218 WYN TERRACE, WALNUT, CA, 91789",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv7ArUmwBUDF",
+        "larkAddress": "20218 wyn terrace walnut , CA 91789",
+        "customerName": "LAIFONG LEE CHEN",
+        "customerId": "C20260106054",
+        "progress": "已上传待回款",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv7ArUmwBUDF",
+          "larkAddress": "20218 wyn terrace walnut , CA 91789",
+          "customerName": "LAIFONG LEE CHEN",
+          "progress": "已上传待回款",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036521",
+      "evhomeAddress": "20372 E Crestline Dr., Walnut, CA, 91789",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv2YnXLbyCjI",
+        "larkAddress": "20372 E Crestline Dr. Walnut CA 91789",
+        "customerName": "Arthur Shiah",
+        "customerId": "C20251118004",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv2YnXLbyCjI",
+          "larkAddress": "20372 E Crestline Dr. Walnut CA 91789",
+          "customerName": "Arthur Shiah",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036518",
+      "evhomeAddress": "15921 meadowside, la puete, CA, 91744",
+      "matchStatus": "weak",
+      "bestMatch": {
+        "recordId": "recv4aAa3GCaBL",
+        "larkAddress": "15921 Meadowside St, La Puente, CA 91744",
+        "customerName": "yunda wang",
+        "customerId": "C20251201016",
+        "progress": "完工大吉",
+        "score": 65
+      },
+      "candidates": [
+        {
+          "recordId": "recv4aAa3GCaBL",
+          "larkAddress": "15921 Meadowside St, La Puente, CA 91744",
+          "customerName": "yunda wang",
+          "progress": "完工大吉",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036019",
+      "evhomeAddress": "14872 ASH DR, CHINO HILLS, CA, 91709",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv2YnSap1mEv",
+        "larkAddress": "14872 ASH DR CHINO HILLS CA 91709",
+        "customerName": "QIANQIAN YAN",
+        "customerId": "C20251118003",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv2YnSap1mEv",
+          "larkAddress": "14872 ASH DR CHINO HILLS CA 91709",
+          "customerName": "QIANQIAN YAN",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-035894",
+      "evhomeAddress": "3185 Skyview Ridge, Chino Hills, CA, 91709",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv3DCFYJ30mZ",
+        "larkAddress": "3185 Skyview Ridge, Chino Hills, CA 91709",
+        "customerName": "Nan Sun ",
+        "customerId": "C20251125013",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv3DCFYJ30mZ",
+          "larkAddress": "3185 Skyview Ridge, Chino Hills, CA 91709",
+          "customerName": "Nan Sun ",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-034897",
+      "evhomeAddress": "2720 South Palm Avenue, Ontario, CA, 91762",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4aCEu932k4",
+        "larkAddress": "2720 s palm ave ontario ca 91762",
+        "customerName": "Nancy nguyen ",
+        "customerId": "C20251201017",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4aCEu932k4",
+          "larkAddress": "2720 s palm ave ontario ca 91762",
+          "customerName": "Nancy nguyen ",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-034612",
+      "evhomeAddress": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4Xx8e9yqbI",
+        "larkAddress": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+        "customerName": "Charissa Chow",
+        "customerId": "C20251209029",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4Xx8e9yqbI",
+          "larkAddress": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+          "customerName": "Charissa Chow",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-034528",
+      "evhomeAddress": "1517 Heather Hill Rd, Hacienda Heights, CA, 91745",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4tKodqjewO",
+        "larkAddress": "1517 Heather Hill Road, Hacienda Heights, CA 91745 ",
+        "customerName": "YUH JEN CHENG",
+        "customerId": "C20251204018",
+        "progress": "已上传待回款",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4tKodqjewO",
+          "larkAddress": "1517 Heather Hill Road, Hacienda Heights, CA 91745 ",
+          "customerName": "YUH JEN CHENG",
+          "progress": "已上传待回款",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-032834",
+      "evhomeAddress": "7843 EL DORADO,ST, FONTANA, CA, 92336",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4tKFNtWMNu",
+        "larkAddress": "7843 El Dorado St, Fontana, CA 92336",
+        "customerName": "Wen Yu",
+        "customerId": "C20251204019",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4tKFNtWMNu",
+          "larkAddress": "7843 El Dorado St, Fontana, CA 92336",
+          "customerName": "Wen Yu",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-031391",
+      "evhomeAddress": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA, 91748",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv6U57mWqtku",
+        "larkAddress": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA 91748",
+        "customerName": "Thomas Woo",
+        "customerId": "C20251230044",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv6U57mWqtku",
+          "larkAddress": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA 91748",
+          "customerName": "Thomas Woo",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-030272",
+      "evhomeAddress": "141 PASEO PERDIDO, WALNUT, CA, 91789",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4XxEBImhlt",
+        "larkAddress": "141 Paseo Perdido, Walnut, CA 91789",
+        "customerName": "Hongwei Hu",
+        "customerId": "C20251209030",
+        "progress": "完工大吉",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4XxEBImhlt",
+          "larkAddress": "141 Paseo Perdido, Walnut, CA 91789",
+          "customerName": "Hongwei Hu",
+          "progress": "完工大吉",
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

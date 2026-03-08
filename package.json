@@ -3,7 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "evhome:paid": "node scripts/evhome_export_paid.js"
+    "evhome:paid": "node scripts/evhome_export_paid.js",
+    "lark:test": "node scripts/lark_base_test.js",
+    "lark:match-paid": "node scripts/lark_match_paid.js",
+    "lark:update-crh": "node scripts/lark_update_crh.js",
+    "lark:probe-write": "node scripts/lark_probe_write.js"
   },
   "dependencies": {
     "playwright-core": "^1.58.2"
