@@ -94,7 +94,7 @@ async function findDashboardTable(page) {
   return table;
 }
 
-async function extractPaidRows(page) {
+async function extractRowsFromCurrentPage(page) {
   const table = await findDashboardTable(page);
   const headers = (await table.locator('thead th').allInnerTexts()).map((h) => h.replace(/\s+/g, ' ').trim());
   const rows = table.locator('tbody tr');
@@ -105,18 +105,72 @@ async function extractPaidRows(page) {
     const row = rows.nth(i);
     const cells = (await row.locator('td').allInnerTexts()).map((v) => v.replace(/\s+/g, ' ').trim());
     const record = Object.fromEntries(headers.map((h, idx) => [h, cells[idx] ?? '']));
-    const status = record['Application Status'] || record['Status'] || '';
-    if (/^paid$/i.test(status)) {
-      results.push({
-        applicationId: record['Application ID'] || '',
-        claimDate: record['Claim Date'] || '',
-        submittedDate: record['Submitted Date'] || '',
-        installationSite: record['Installation Site'] || '',
-        employeeName: record['Employee Name'] || '',
-        rebateAmount: record['Rebate Amount'] || '',
-        status,
-        dueDate: record['Due Date'] || ''
-      });
+    results.push({
+      applicationId: record['Application ID'] || '',
+      claimDate: record['Claim Date'] || '',
+      submittedDate: record['Submitted Date'] || '',
+      installationSite: record['Installation Site'] || '',
+      employeeName: record['Employee Name'] || '',
+      rebateAmount: record['Rebate Amount'] || '',
+      status: record['Application Status'] || record['Status'] || '',
+      dueDate: record['Due Date'] || ''
+    });
+  }
+
+  return results;
+}
+
+async function getPageNumber(page) {
+  const text = await page.locator('body').innerText();
+  const match = text.match(/\bPage\s+(\d+)\b/);
+  return match ? Number(match[1]) : null;
+}
+
+async function goToNextPage(page, previousPageNumber) {
+  const nextControl = page.locator('div[id^="rightIconDiv"]').first();
+  if (!(await nextControl.count())) {
+    return false;
+  }
+
+  const beforeFirstId = ((await extractRowsFromCurrentPage(page))[0] || {}).applicationId || '';
+  await nextControl.click();
+  await page.waitForTimeout(2500);
+  await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
+
+  for (let i = 0; i < 10; i += 1) {
+    const pageNumber = await getPageNumber(page);
+    const afterFirstId = ((await extractRowsFromCurrentPage(page))[0] || {}).applicationId || '';
+    if ((pageNumber && previousPageNumber && pageNumber > previousPageNumber) || (afterFirstId && afterFirstId !== beforeFirstId)) {
+      return true;
+    }
+    await page.waitForTimeout(1000);
+  }
+
+  return false;
+}
+
+async function extractPaidRows(page) {
+  const seenPageStarts = new Set();
+  const results = [];
+
+  for (let guard = 0; guard < 20; guard += 1) {
+    const currentRows = await extractRowsFromCurrentPage(page);
+    const firstId = (currentRows[0] || {}).applicationId || `page-${guard}`;
+    if (seenPageStarts.has(firstId)) {
+      break;
+    }
+    seenPageStarts.add(firstId);
+
+    for (const row of currentRows) {
+      if (/^paid$/i.test(row.status || '')) {
+        results.push(row);
+      }
+    }
+
+    const pageNumber = await getPageNumber(page);
+    const moved = await goToNextPage(page, pageNumber);
+    if (!moved) {
+      break;
     }
   }
 
