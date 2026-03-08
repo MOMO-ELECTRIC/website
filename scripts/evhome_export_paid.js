@@ -22,7 +22,7 @@ function ensureFolder(dirPath) {
 }
 
 function getOnePasswordField(item, field) {
-  return execFileSync('op', ['item', 'get', item, `--fields=${field}`], {
+  return execFileSync('op', ['item', 'get', item, `--fields=${field}`, '--reveal'], {
     encoding: 'utf8',
     stdio: ['ignore', 'pipe', 'pipe']
   }).trim();
