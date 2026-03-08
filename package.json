@@ -1,0 +1,11 @@
+{
+  "name": "openclaw-workspace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "evhome:paid": "node scripts/evhome_export_paid.js"
+  },
+  "dependencies": {
+    "playwright-core": "^1.58.2"
+  }
+}
