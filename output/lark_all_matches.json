@@ -1,0 +1,844 @@
+{
+  "generatedAt": "2026-03-08T21:22:44.921Z",
+  "totalEvhome": 31,
+  "totalLarkRecords": 64,
+  "matches": [
+    {
+      "applicationId": "CRH-042512",
+      "evhomeAddress": "702 Flint Spear Rd, Walnut, CA, 91789",
+      "evhomeStatus": "Submitted",
+      "evhomeStatusZh": "已上传",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recdv1GYO6",
+        "larkAddress": "702 Flint Spear Rd, Walnut, CA 91789",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recdv1GYO6",
+          "address": "702 Flint Spear Rd, Walnut, CA 91789",
+          "norm": {
+            "raw": "702 Flint Spear Rd, Walnut, CA 91789",
+            "normalized": "702 FLINT SPEAR RD WALNUT CA 91789",
+            "houseNumber": "702",
+            "city": "WALNUT",
+            "zip": "91789",
+            "street": "FLINT SPEAR RD"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-042200",
+      "evhomeAddress": "624 Big Creek Ln, Walnut, CA, 91789",
+      "evhomeStatus": "Submitted",
+      "evhomeStatusZh": "已上传",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "reckwHrXA2",
+        "larkAddress": "624 Big Creek Ln, Walnut, CA 91789",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "reckwHrXA2",
+          "address": "624 Big Creek Ln, Walnut, CA 91789",
+          "norm": {
+            "raw": "624 Big Creek Ln, Walnut, CA 91789",
+            "normalized": "624 BIG CREEK LN WALNUT CA 91789",
+            "houseNumber": "624",
+            "city": "WALNUT",
+            "zip": "91789",
+            "street": "BIG CREEK LN"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-041852",
+      "evhomeAddress": "1285 E Kingsley Ave, Pomona, CA, 91767",
+      "evhomeStatus": "Submitted",
+      "evhomeStatusZh": "已上传",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recCiDJrTJ",
+        "larkAddress": "1285 E Kingsley Ave, Pomona, CA 91767",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recCiDJrTJ",
+          "address": "1285 E Kingsley Ave, Pomona, CA 91767",
+          "norm": {
+            "raw": "1285 E Kingsley Ave, Pomona, CA 91767",
+            "normalized": "1285 E KINGSLEY AVE POMONA CA 91767",
+            "houseNumber": "1285",
+            "city": "POMONA",
+            "zip": "91767",
+            "street": "E KINGSLEY AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-041761",
+      "evhomeAddress": "653 Kempton Ave, Monterey Park, CA, 91755",
+      "evhomeStatus": "Submitted",
+      "evhomeStatusZh": "已上传",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recLixcP24",
+        "larkAddress": "653 Kempton Ave, Monterey Park, CA 91755",
+        "score": 80
+      },
+      "candidates": [
+        {
+          "recordId": "recLixcP24",
+          "address": "653 Kempton Ave, Monterey Park, CA 91755",
+          "norm": {
+            "raw": "653 Kempton Ave, Monterey Park, CA 91755",
+            "normalized": "653 KEMPTON AVE MONTEREY PARK CA 91755",
+            "houseNumber": "653",
+            "city": "",
+            "zip": "91755",
+            "street": "KEMPTON AVE MONTEREY PARK"
+          },
+          "score": 80
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-041379",
+      "evhomeAddress": "1233 S Willow Ave, West Covina, CA, 91790",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recP0b0kO8",
+        "larkAddress": "1233 S Willow Ave, West Covina, CA 91790 ",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recP0b0kO8",
+          "address": "1233 S Willow Ave, West Covina, CA 91790 ",
+          "norm": {
+            "raw": "1233 S Willow Ave, West Covina, CA 91790 ",
+            "normalized": "1233 S WILLOW AVE W COVINA CA 91790",
+            "houseNumber": "1233",
+            "city": "W COVINA",
+            "zip": "91790",
+            "street": "S WILLOW AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-041213",
+      "evhomeAddress": "1649 E Merced Ave, West Covina, CA, 91791",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recHCTOY1r",
+        "larkAddress": "1649 E Merced Ave, West Covina, CA 91791 ",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recHCTOY1r",
+          "address": "1649 E Merced Ave, West Covina, CA 91791 ",
+          "norm": {
+            "raw": "1649 E Merced Ave, West Covina, CA 91791 ",
+            "normalized": "1649 E MERCED AVE W COVINA CA 91791",
+            "houseNumber": "1649",
+            "city": "W COVINA",
+            "zip": "91791",
+            "street": "E MERCED AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-040915",
+      "evhomeAddress": "57 Oak Cliff Dr, Pomona, CA, 91766",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recwXaHq6v",
+        "larkAddress": "57 Oak Cliff Dr, Pomona, CA 91766",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recwXaHq6v",
+          "address": "57 Oak Cliff Dr, Pomona, CA 91766",
+          "norm": {
+            "raw": "57 Oak Cliff Dr, Pomona, CA 91766",
+            "normalized": "57 OAK CLIFF DR POMONA CA 91766",
+            "houseNumber": "57",
+            "city": "POMONA",
+            "zip": "91766",
+            "street": "OAK CLIFF DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-039759",
+      "evhomeAddress": "310 N MOUNTAIN VIEW AVE, Pomona, CA, 91767",
+      "evhomeStatus": "Submitted",
+      "evhomeStatusZh": "已上传",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv94WHGuM09K",
+        "larkAddress": "310 N MOUNTAIN VIEW AVE, Pomona, CA 91767",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv94WHGuM09K",
+          "address": "310 N MOUNTAIN VIEW AVE, Pomona, CA 91767",
+          "norm": {
+            "raw": "310 N MOUNTAIN VIEW AVE, Pomona, CA 91767",
+            "normalized": "310 N MOUNTAIN VIEW AVE POMONA CA 91767",
+            "houseNumber": "310",
+            "city": "POMONA",
+            "zip": "91767",
+            "street": "N MOUNTAIN VIEW AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-039750",
+      "evhomeAddress": "620 Citadel Dr, Walnut, CA, 91789",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recJlpWyCD",
+        "larkAddress": "620 Citadel Dr, Walnut, CA 91789",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recJlpWyCD",
+          "address": "620 Citadel Dr, Walnut, CA 91789",
+          "norm": {
+            "raw": "620 Citadel Dr, Walnut, CA 91789",
+            "normalized": "620 CITADEL DR WALNUT CA 91789",
+            "houseNumber": "620",
+            "city": "WALNUT",
+            "zip": "91789",
+            "street": "CITADEL DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-039403",
+      "evhomeAddress": "17252 Mariana St, Fontana, CA, 92336",
+      "evhomeStatus": "Started",
+      "evhomeStatusZh": "Started",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv3S9Xen98wl",
+        "larkAddress": "17252 Mariana st, Fontana 92336",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv3S9Xen98wl",
+          "address": "17252 Mariana st, Fontana 92336",
+          "norm": {
+            "raw": "17252 Mariana st, Fontana 92336",
+            "normalized": "17252 MARIANA ST FONTANA 92336",
+            "houseNumber": "17252",
+            "city": "FONTANA",
+            "zip": "92336",
+            "street": "MARIANA ST"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-039279",
+      "evhomeAddress": "15605 Reed Dr, Fontana, CA, 92336",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recPp2mnfP",
+        "larkAddress": "15605 Reed Dr, Fontana, CA 92336",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recPp2mnfP",
+          "address": "15605 Reed Dr, Fontana, CA 92336",
+          "norm": {
+            "raw": "15605 Reed Dr, Fontana, CA 92336",
+            "normalized": "15605 REED DR FONTANA CA 92336",
+            "houseNumber": "15605",
+            "city": "FONTANA",
+            "zip": "92336",
+            "street": "REED DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038832",
+      "evhomeAddress": "23455 Robinbrook Pl, Diamond Bar, CA, 91765",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv7Ad1IeuJqR",
+        "larkAddress": "23455 Robinbrook Pl Diamond Bar CA 91765 ",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv7Ad1IeuJqR",
+          "address": "23455 Robinbrook Pl Diamond Bar CA 91765 ",
+          "norm": {
+            "raw": "23455 Robinbrook Pl Diamond Bar CA 91765 ",
+            "normalized": "23455 ROBINBROOK PL DIAMOND BAR CA 91765",
+            "houseNumber": "23455",
+            "city": "DIAMOND BAR",
+            "zip": "91765",
+            "street": "ROBINBROOK PL"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038558",
+      "evhomeAddress": "1026 S TERRI ANN DR, WEST COVINA, CA, 91791",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recjjjIHpL",
+        "larkAddress": "1026 S TERRI ANN DR, WEST COVINA, CA 91791",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recjjjIHpL",
+          "address": "1026 S TERRI ANN DR, WEST COVINA, CA 91791",
+          "norm": {
+            "raw": "1026 S TERRI ANN DR, WEST COVINA, CA 91791",
+            "normalized": "1026 S TERRI ANN DR W COVINA CA 91791",
+            "houseNumber": "1026",
+            "city": "W COVINA",
+            "zip": "91791",
+            "street": "S TERRI ANN DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038554",
+      "evhomeAddress": "18215 LA CORTITA ST, ROWLAND HEIGHTS, CA, 91748",
+      "evhomeStatus": "Incomplete",
+      "evhomeStatusZh": "Incomplete",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recv9aLHNIomnY",
+        "larkAddress": "18215 La cortlta st.  Rowland Heights ca.  91748.    ",
+        "score": 80
+      },
+      "candidates": [
+        {
+          "recordId": "recv9aLHNIomnY",
+          "address": "18215 La cortlta st.  Rowland Heights ca.  91748.    ",
+          "norm": {
+            "raw": "18215 La cortlta st.  Rowland Heights ca.  91748.    ",
+            "normalized": "18215 LA CORTLTA ST ROWLAND HTS CA 91748",
+            "houseNumber": "18215",
+            "city": "ROWLAND HTS",
+            "zip": "91748",
+            "street": "LA CORTLTA ST"
+          },
+          "score": 80
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038131",
+      "evhomeAddress": "16573 ELM HAVEN DR, Hacienda Heights, CA, 91745",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv6gcxT3WdAf",
+        "larkAddress": "16573 ELM HAVEN DR, Hacienda Heights, CA 91745",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv6gcxT3WdAf",
+          "address": "16573 ELM HAVEN DR, Hacienda Heights, CA 91745",
+          "norm": {
+            "raw": "16573 ELM HAVEN DR, Hacienda Heights, CA 91745",
+            "normalized": "16573 ELM HAVEN DR HACIENDA HTS CA 91745",
+            "houseNumber": "16573",
+            "city": "HACIENDA HTS",
+            "zip": "91745",
+            "street": "ELM HAVEN DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-038091",
+      "evhomeAddress": "5736 Rosebud Ct, CHINO HILLS, CA, 91709",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv7AK7xgDvAw",
+        "larkAddress": "5736 Rosebud Ct, CHINO HILLS, CA 91709\n",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv7AK7xgDvAw",
+          "address": "5736 Rosebud Ct, CHINO HILLS, CA 91709\n",
+          "norm": {
+            "raw": "5736 Rosebud Ct, CHINO HILLS, CA 91709\n",
+            "normalized": "5736 ROSEBUD CT CHINO HILLS CA 91709",
+            "houseNumber": "5736",
+            "city": "CHINO HILLS",
+            "zip": "91709",
+            "street": "ROSEBUD CT"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037823",
+      "evhomeAddress": "1347 BEVERLY AVE, ONTARIO, CA, 91762",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv6g5Y39kGb5",
+        "larkAddress": "1347 BEVERLY AVE ONTARIO CA 91762",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv6g5Y39kGb5",
+          "address": "1347 BEVERLY AVE ONTARIO CA 91762",
+          "norm": {
+            "raw": "1347 BEVERLY AVE ONTARIO CA 91762",
+            "normalized": "1347 BEVERLY AVE ONTARIO CA 91762",
+            "houseNumber": "1347",
+            "city": "ONTARIO",
+            "zip": "91762",
+            "street": "BEVERLY AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037774",
+      "evhomeAddress": "2033 Bolanos Ave, Rowland Heights, CA, 91748",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recv6g2eDKobti",
+        "larkAddress": "2033 Bolanos  Ave Rowland Heights. Ca91748",
+        "score": 80
+      },
+      "candidates": [
+        {
+          "recordId": "recv6g2eDKobti",
+          "address": "2033 Bolanos  Ave Rowland Heights. Ca91748",
+          "norm": {
+            "raw": "2033 Bolanos  Ave Rowland Heights. Ca91748",
+            "normalized": "2033 BOLANOS AVE ROWLAND HTS CA91748",
+            "houseNumber": "2033",
+            "city": "ROWLAND HTS",
+            "zip": "",
+            "street": "BOLANOS AVE CA91748"
+          },
+          "score": 80
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037527",
+      "evhomeAddress": "914 Gonzales St, Placentia, CA, 92870",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recv3I7nrXMJZG",
+        "larkAddress": "914 Gonzales st placentia ca 92870yi",
+        "score": 80
+      },
+      "candidates": [
+        {
+          "recordId": "recv3I7nrXMJZG",
+          "address": "914 Gonzales st placentia ca 92870yi",
+          "norm": {
+            "raw": "914 Gonzales st placentia ca 92870yi",
+            "normalized": "914 GONZALES ST PLACENTIA CA 92870YI",
+            "houseNumber": "914",
+            "city": "PLACENTIA",
+            "zip": "",
+            "street": "GONZALES ST 92870YI"
+          },
+          "score": 80
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-037489",
+      "evhomeAddress": "7112 N muscatel Ave, San Gabriel, CA, 91775",
+      "evhomeStatus": "Submitted",
+      "evhomeStatusZh": "已上传",
+      "matchStatus": "possible",
+      "bestMatch": {
+        "recordId": "recv9zvmYcZFfG",
+        "larkAddress": "7112 N muscatel Ave San Gabriel CA91775",
+        "score": 75
+      },
+      "candidates": [
+        {
+          "recordId": "recv9zvmYcZFfG",
+          "address": "7112 N muscatel Ave San Gabriel CA91775",
+          "norm": {
+            "raw": "7112 N muscatel Ave San Gabriel CA91775",
+            "normalized": "7112 N MUSCATEL AVE SAN GABRIEL CA91775",
+            "houseNumber": "7112",
+            "city": "",
+            "zip": "",
+            "street": "N MUSCATEL AVE SAN GABRIEL CA91775"
+          },
+          "score": 75
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036818",
+      "evhomeAddress": "20218 WYN TERRACE, WALNUT, CA, 91789",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv7ArUmwBUDF",
+        "larkAddress": "20218 wyn terrace walnut , CA 91789",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv7ArUmwBUDF",
+          "address": "20218 wyn terrace walnut , CA 91789",
+          "norm": {
+            "raw": "20218 wyn terrace walnut , CA 91789",
+            "normalized": "20218 WYN TER WALNUT CA 91789",
+            "houseNumber": "20218",
+            "city": "WALNUT",
+            "zip": "91789",
+            "street": "WYN TER"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036521",
+      "evhomeAddress": "20372 E Crestline Dr., Walnut, CA, 91789",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv2YnXLbyCjI",
+        "larkAddress": "20372 E Crestline Dr. Walnut CA 91789",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv2YnXLbyCjI",
+          "address": "20372 E Crestline Dr. Walnut CA 91789",
+          "norm": {
+            "raw": "20372 E Crestline Dr. Walnut CA 91789",
+            "normalized": "20372 E CRESTLINE DR WALNUT CA 91789",
+            "houseNumber": "20372",
+            "city": "WALNUT",
+            "zip": "91789",
+            "street": "E CRESTLINE DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036518",
+      "evhomeAddress": "15921 meadowside, la puete, CA, 91744",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "weak",
+      "bestMatch": {
+        "recordId": "recv4aAa3GCaBL",
+        "larkAddress": "15921 Meadowside St, La Puente, CA 91744",
+        "score": 65
+      },
+      "candidates": [
+        {
+          "recordId": "recv4aAa3GCaBL",
+          "address": "15921 Meadowside St, La Puente, CA 91744",
+          "norm": {
+            "raw": "15921 Meadowside St, La Puente, CA 91744",
+            "normalized": "15921 MEADOWSIDE ST LA PUENTE CA 91744",
+            "houseNumber": "15921",
+            "city": "",
+            "zip": "91744",
+            "street": "MEADOWSIDE ST LA PUENTE"
+          },
+          "score": 65
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-036019",
+      "evhomeAddress": "14872 ASH DR, CHINO HILLS, CA, 91709",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv2YnSap1mEv",
+        "larkAddress": "14872 ASH DR CHINO HILLS CA 91709",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv2YnSap1mEv",
+          "address": "14872 ASH DR CHINO HILLS CA 91709",
+          "norm": {
+            "raw": "14872 ASH DR CHINO HILLS CA 91709",
+            "normalized": "14872 ASH DR CHINO HILLS CA 91709",
+            "houseNumber": "14872",
+            "city": "CHINO HILLS",
+            "zip": "91709",
+            "street": "ASH DR"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-035894",
+      "evhomeAddress": "3185 Skyview Ridge, Chino Hills, CA, 91709",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv3DCFYJ30mZ",
+        "larkAddress": "3185 Skyview Ridge, Chino Hills, CA 91709",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv3DCFYJ30mZ",
+          "address": "3185 Skyview Ridge, Chino Hills, CA 91709",
+          "norm": {
+            "raw": "3185 Skyview Ridge, Chino Hills, CA 91709",
+            "normalized": "3185 SKYVIEW RIDGE CHINO HILLS CA 91709",
+            "houseNumber": "3185",
+            "city": "CHINO HILLS",
+            "zip": "91709",
+            "street": "SKYVIEW RIDGE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-034897",
+      "evhomeAddress": "2720 South Palm Avenue, Ontario, CA, 91762",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4aCEu932k4",
+        "larkAddress": "2720 s palm ave ontario ca 91762",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4aCEu932k4",
+          "address": "2720 s palm ave ontario ca 91762",
+          "norm": {
+            "raw": "2720 s palm ave ontario ca 91762",
+            "normalized": "2720 S PALM AVE ONTARIO CA 91762",
+            "houseNumber": "2720",
+            "city": "ONTARIO",
+            "zip": "91762",
+            "street": "S PALM AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-034612",
+      "evhomeAddress": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4Xx8e9yqbI",
+        "larkAddress": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4Xx8e9yqbI",
+          "address": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+          "norm": {
+            "raw": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+            "normalized": "1160 JEDBURGH ST GLENDORA CA 91740",
+            "houseNumber": "1160",
+            "city": "GLENDORA",
+            "zip": "91740",
+            "street": "JEDBURGH ST"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-034528",
+      "evhomeAddress": "1517 Heather Hill Rd, Hacienda Heights, CA, 91745",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4tKodqjewO",
+        "larkAddress": "1517 Heather Hill Road, Hacienda Heights, CA 91745 ",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4tKodqjewO",
+          "address": "1517 Heather Hill Road, Hacienda Heights, CA 91745 ",
+          "norm": {
+            "raw": "1517 Heather Hill Road, Hacienda Heights, CA 91745 ",
+            "normalized": "1517 HEATHER HILL RD HACIENDA HTS CA 91745",
+            "houseNumber": "1517",
+            "city": "HACIENDA HTS",
+            "zip": "91745",
+            "street": "HEATHER HILL RD"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-032834",
+      "evhomeAddress": "7843 EL DORADO,ST, FONTANA, CA, 92336",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4tKFNtWMNu",
+        "larkAddress": "7843 El Dorado St, Fontana, CA 92336",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4tKFNtWMNu",
+          "address": "7843 El Dorado St, Fontana, CA 92336",
+          "norm": {
+            "raw": "7843 El Dorado St, Fontana, CA 92336",
+            "normalized": "7843 EL DORADO ST FONTANA CA 92336",
+            "houseNumber": "7843",
+            "city": "FONTANA",
+            "zip": "92336",
+            "street": "EL DORADO ST"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-031391",
+      "evhomeAddress": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA, 91748",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv6U57mWqtku",
+        "larkAddress": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA 91748",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv6U57mWqtku",
+          "address": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA 91748",
+          "norm": {
+            "raw": "2314 SIERRA LEONE AVE, ROWLAND HEIGHTS, CA 91748",
+            "normalized": "2314 SIERRA LEONE AVE ROWLAND HTS CA 91748",
+            "houseNumber": "2314",
+            "city": "ROWLAND HTS",
+            "zip": "91748",
+            "street": "SIERRA LEONE AVE"
+          },
+          "score": 100
+        }
+      ]
+    },
+    {
+      "applicationId": "CRH-030272",
+      "evhomeAddress": "141 PASEO PERDIDO, WALNUT, CA, 91789",
+      "evhomeStatus": "Paid",
+      "evhomeStatusZh": "已付款",
+      "matchStatus": "high",
+      "bestMatch": {
+        "recordId": "recv4XxEBImhlt",
+        "larkAddress": "141 Paseo Perdido, Walnut, CA 91789",
+        "score": 100
+      },
+      "candidates": [
+        {
+          "recordId": "recv4XxEBImhlt",
+          "address": "141 Paseo Perdido, Walnut, CA 91789",
+          "norm": {
+            "raw": "141 Paseo Perdido, Walnut, CA 91789",
+            "normalized": "141 PASEO PERDIDO WALNUT CA 91789",
+            "houseNumber": "141",
+            "city": "WALNUT",
+            "zip": "91789",
+            "street": "PASEO PERDIDO"
+          },
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

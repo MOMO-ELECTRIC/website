@@ -6,7 +6,7 @@ import process from 'node:process';
 import { chromium } from 'playwright-core';
 
 const EVHOME_URL = 'https://apply.evhome.sce.com/';
-const DEFAULT_OUTPUT = path.resolve(process.cwd(), 'output', 'evhome_paid_projects.json');
+const DEFAULT_OUTPUT = path.resolve(process.cwd(), 'output', 'evhome_projects.json');
 const DEFAULT_DEBUG_DIR = path.resolve(process.cwd(), 'output', 'debug');
 
 function env(name, fallback = undefined) {
@@ -149,11 +149,11 @@ async function goToNextPage(page, previousPageNumber) {
   return false;
 }
 
-async function extractPaidRows(page) {
+async function extractAllRows(page) {
   const seenPageStarts = new Set();
   const results = [];
 
-  for (let guard = 0; guard < 20; guard += 1) {
+  for (let guard = 0; guard < 50; guard += 1) {
     const currentRows = await extractRowsFromCurrentPage(page);
     const firstId = (currentRows[0] || {}).applicationId || `page-${guard}`;
     if (seenPageStarts.has(firstId)) {
@@ -161,11 +161,7 @@ async function extractPaidRows(page) {
     }
     seenPageStarts.add(firstId);
 
-    for (const row of currentRows) {
-      if (/^paid$/i.test(row.status || '')) {
-        results.push(row);
-      }
-    }
+    results.push(...currentRows);
 
     const pageNumber = await getPageNumber(page);
     const moved = await goToNextPage(page, pageNumber);
@@ -237,18 +233,18 @@ async function main() {
   const page = context.pages()[0] || await context.newPage();
 
   await loginIfNeeded(page, username, password);
-  const paidProjects = await extractPaidRows(page);
+  const projects = await extractAllRows(page);
 
   const payload = {
     generatedAt: new Date().toISOString(),
     source: EVHOME_URL,
     opItem: item,
-    count: paidProjects.length,
-    paidProjects
+    count: projects.length,
+    projects
   };
 
   fs.writeFileSync(output, JSON.stringify(payload, null, 2) + '\n');
-  console.log(`Saved ${paidProjects.length} paid project(s) to ${output}`);
+  console.log(`Saved ${projects.length} project(s) to ${output}`);
 
   if (env('EVHOME_CLOSE_BROWSER', 'false') === 'true') {
     await browser.close();

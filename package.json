@@ -4,10 +4,13 @@
   "type": "module",
   "scripts": {
     "evhome:paid": "node scripts/evhome_export_paid.js",
+    "evhome:all": "node scripts/evhome_export_paid.js",
     "lark:test": "node scripts/lark_base_test.js",
     "lark:match-paid": "node scripts/lark_match_paid.js",
+    "lark:match-all": "node scripts/lark_match_all.js",
     "lark:update-crh": "node scripts/lark_update_crh.js",
-    "lark:probe-write": "node scripts/lark_probe_write.js"
+    "lark:probe-write": "node scripts/lark_probe_write.js",
+    "lark:update-all": "node scripts/lark_update_all.js"
   },
   "dependencies": {
     "playwright-core": "^1.58.2"
