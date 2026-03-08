@@ -181,9 +181,13 @@ async function loginIfNeeded(page, username, password) {
   await page.goto(EVHOME_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(2000);
 
+  if (await waitForDashboard(page)) {
+    return;
+  }
+
   let emailInput = page.getByLabel(/email address/i).first();
   if (!(await emailInput.count())) {
-    emailInput = page.locator('input[type="text"]').first();
+    emailInput = page.locator('label:has-text("Email Address")').locator('..').locator('input').first();
   }
 
   let passwordInput = page.getByLabel(/^password$/i).first();
@@ -192,10 +196,8 @@ async function loginIfNeeded(page, username, password) {
   }
 
   if (await emailInput.count()) {
-    await emailInput.click();
     await emailInput.fill('');
     await emailInput.fill(username);
-    await passwordInput.click();
     await passwordInput.fill('');
     await passwordInput.fill(password);
 
