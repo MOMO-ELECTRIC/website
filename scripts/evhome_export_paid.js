@@ -125,21 +125,31 @@ async function extractPaidRows(page) {
 
 async function loginIfNeeded(page, username, password) {
   await page.goto(EVHOME_URL, { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('networkidle').catch(() => {});
+  await page.waitForTimeout(2000);
 
-  const emailInput = page.locator('input[type="email"], input[name*="email" i]').first();
-  const passwordInput = page.locator('input[type="password"]').first();
+  let emailInput = page.getByLabel(/email address/i).first();
+  if (!(await emailInput.count())) {
+    emailInput = page.locator('input[type="text"]').first();
+  }
+
+  let passwordInput = page.getByLabel(/^password$/i).first();
+  if (!(await passwordInput.count())) {
+    passwordInput = page.locator('input[type="password"]').first();
+  }
 
   if (await emailInput.count()) {
+    await emailInput.click();
+    await emailInput.fill('');
     await emailInput.fill(username);
+    await passwordInput.click();
+    await passwordInput.fill('');
     await passwordInput.fill(password);
 
     const loginButton = page.getByRole('button', { name: /log ?in/i }).first();
     if (await loginButton.count()) {
-      await Promise.allSettled([
-        page.waitForLoadState('networkidle', { timeout: 20000 }),
-        loginButton.click()
-      ]);
+      await loginButton.click();
+      await page.waitForTimeout(8000);
+      await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
     }
   }
 
