@@ -1,0 +1,55 @@
+{
+  "nowMs": 1773033841553,
+  "nowIso": "2026-03-09T05:24:01.553Z",
+  "count": 4,
+  "records": [
+    {
+      "recordId": "recv6eY0PNDWST",
+      "customerName": "YANCHUN LI",
+      "phone": "949-518-4703",
+      "address": "20 ROSSLYN IRVINE CA 92620",
+      "prequalId": "A4692240R9184",
+      "crhNo": "",
+      "scheduleMs": 1768550400000,
+      "scheduleIso": "2026-01-16T08:00:00.000Z",
+      "status": "已申请Permit待批复",
+      "evhomeStatus": ""
+    },
+    {
+      "recordId": "recfwaBuXJ",
+      "customerName": "MEIYING CHENG",
+      "phone": "6263883848",
+      "address": "15015 POPLAR AVE",
+      "prequalId": "APB94415E9401P",
+      "crhNo": "",
+      "scheduleMs": 1769760000000,
+      "scheduleIso": "2026-01-30T08:00:00.000Z",
+      "status": "待验收",
+      "evhomeStatus": ""
+    },
+    {
+      "recordId": "rect0coSCz",
+      "customerName": "Yeting Yuan",
+      "phone": "4053652549",
+      "address": "1131 Cabrillo Park Dr, Santa Ana, CA 92701",
+      "prequalId": "ALE9442QH9402",
+      "crhNo": "",
+      "scheduleMs": 1772524800000,
+      "scheduleIso": "2026-03-03T08:00:00.000Z",
+      "status": "申请Permit",
+      "evhomeStatus": ""
+    },
+    {
+      "recordId": "recQyvz42K",
+      "customerName": "JINYAO ZHEN",
+      "phone": "6265251402",
+      "address": "1320 Ardilla Ave, La Puente, CA 91746",
+      "prequalId": "ANH1629V91589",
+      "crhNo": "",
+      "scheduleMs": 1772611200000,
+      "scheduleIso": "2026-03-04T08:00:00.000Z",
+      "status": "待验收",
+      "evhomeStatus": ""
+    }
+  ]
+}
