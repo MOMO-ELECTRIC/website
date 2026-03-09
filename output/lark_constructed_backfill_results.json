@@ -1,0 +1,67 @@
+{
+  "dryRun": false,
+  "count": 4,
+  "results": [
+    {
+      "recordId": "recv6eY0PNDWST",
+      "customerName": "YANCHUN LI",
+      "prequalId": "A4692240R9184",
+      "currentCrh": "",
+      "claimNo": "CRH-039184",
+      "ocrCrh": "",
+      "chosenCrh": "CRH-039184",
+      "currentAddress": "20 ROSSLYN IRVINE CA 92620",
+      "normalizedAddress": "20 ROSSLYN IRVINE CA 92620",
+      "payload": {
+        "CRH_NO": "CRH-039184"
+      },
+      "updated": true
+    },
+    {
+      "recordId": "recfwaBuXJ",
+      "customerName": "MEIYING CHENG",
+      "prequalId": "APB94415E9401P",
+      "currentCrh": "",
+      "claimNo": "CRH-039269",
+      "ocrCrh": "",
+      "chosenCrh": "CRH-039269",
+      "currentAddress": "15015 POPLAR AVE",
+      "normalizedAddress": "15015 POPLAR AVE, HACIENDA HTS, CA 91745-1422",
+      "payload": {
+        "CRH_NO": "CRH-039269",
+        "客户地址": "15015 POPLAR AVE, HACIENDA HTS, CA 91745-1422"
+      },
+      "updated": true
+    },
+    {
+      "recordId": "rect0coSCz",
+      "customerName": "Yeting Yuan",
+      "prequalId": "ALE9442QH9402",
+      "currentCrh": "",
+      "claimNo": "CRH-039270",
+      "ocrCrh": "",
+      "chosenCrh": "CRH-039270",
+      "currentAddress": "1131 Cabrillo Park Dr, Santa Ana, CA 92701",
+      "normalizedAddress": "1131 Cabrillo Park Dr, Santa Ana, CA 92701",
+      "payload": {
+        "CRH_NO": "CRH-039270"
+      },
+      "updated": true
+    },
+    {
+      "recordId": "recQyvz42K",
+      "customerName": "JINYAO ZHEN",
+      "prequalId": "ANH1629V91589",
+      "currentCrh": "",
+      "claimNo": "",
+      "ocrCrh": "CRH-041589",
+      "chosenCrh": "CRH-041589",
+      "currentAddress": "1320 Ardilla Ave, La Puente, CA 91746",
+      "normalizedAddress": "1320 Ardilla Ave, La Puente, CA 91746",
+      "payload": {
+        "CRH_NO": "CRH-041589"
+      },
+      "updated": true
+    }
+  ]
+}
