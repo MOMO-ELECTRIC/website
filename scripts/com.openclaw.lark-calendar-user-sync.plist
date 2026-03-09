@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
       <string>/bin/bash</string>
-      <string>/Users/yixiao/.openclaw/workspace/scripts/lark_calendar_sync_saved_user_token.sh</string>
+      <string>/Users/yixiao/.openclaw/workspace/scripts/run_lark_calendar_user_sync.sh</string>
     </array>
 
     <key>WorkingDirectory</key>

@@ -19,9 +19,9 @@ fi
 
 mkdir -p "$(dirname "$OUT_FILE")"
 
-RESP=$(curl -sS -X POST "https://open.larksuite.com/open-apis/authen/v2/oauth/token" \
+RESP=$(curl -sS -X POST "https://open.larksuite.com/open-apis/authen/v1/access_token" \
   -H "Content-Type: application/json" \
-  -d "{\"grant_type\":\"authorization_code\",\"code\":\"$CODE\",\"client_id\":\"$APP_ID\",\"client_secret\":\"$APP_SECRET\",\"redirect_uri\":\"$REDIRECT_URI\"}")
+  -d "{\"grant_type\":\"authorization_code\",\"code\":\"$CODE\",\"app_id\":\"$APP_ID\",\"app_secret\":\"$APP_SECRET\",\"redirect_uri\":\"$REDIRECT_URI\"}")
 
 printf '%s\n' "$RESP" > "$OUT_FILE"
 chmod 600 "$OUT_FILE"
