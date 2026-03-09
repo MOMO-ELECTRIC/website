@@ -42,10 +42,11 @@ async function waitForDashboard(page) {
   for (const m of markers) { try { await m.waitFor({ timeout: 10000 }); return true; } catch {} }
   return false;
 }
-async function loginIfNeeded(page, username, password) {
+async function loginIfNeeded(page, getCredentials) {
   await page.goto(EVHOME_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(2000);
-  if (await waitForDashboard(page)) return;
+  if (await waitForDashboard(page)) return { loggedIn: true, usedCredentials: false, item: null };
+  const { item, username, password } = getCredentials();
   let emailInput = page.getByLabel(/email address/i).first();
   if (!(await emailInput.count())) emailInput = page.locator('label:has-text("Email Address")').locator('..').locator('input').first();
   let passwordInput = page.getByLabel(/^password$/i).first();
@@ -55,6 +56,7 @@ async function loginIfNeeded(page, username, password) {
   await page.getByRole('button', { name: /log ?in/i }).first().click();
   await page.waitForTimeout(6000);
   if (!(await waitForDashboard(page))) throw new Error('Dashboard did not appear after login');
+  return { loggedIn: true, usedCredentials: true, item };
 }
 async function findDashboardTable(page) {
   const table = page.locator('table').filter({ has: page.locator('thead th', { hasText: /application id/i }) }).first();
@@ -119,13 +121,12 @@ async function extractAllRows(page) {
 async function main() {
   const output = path.resolve(env('EVHOME_OUTPUT', DEFAULT_OUTPUT));
   ensureDir(output);
-  const { item, username, password } = getCredentials();
   const browser = await connectBrowser();
   const context = browser.contexts()[0] || await browser.newContext();
   const page = context.pages()[0] || await context.newPage();
-  await loginIfNeeded(page, username, password);
+  const loginState = await loginIfNeeded(page, getCredentials);
   const projects = await extractAllRows(page);
-  const payload = { generatedAt: new Date().toISOString(), source: EVHOME_URL, opItem: item, count: projects.length, projects };
+  const payload = { generatedAt: new Date().toISOString(), source: EVHOME_URL, opItem: loginState.item || env('EVHOME_OP_ITEM', 'apply.evhome.sce.com (apply@momoelec.com)'), usedCredentials: !!loginState.usedCredentials, count: projects.length, projects };
   fs.writeFileSync(output, JSON.stringify(payload, null, 2) + '\n');
   console.log(`Saved ${projects.length} total project(s) to ${output}`);
 }

@@ -1,0 +1,523 @@
+{
+  "dryRun": false,
+  "startedAt": "2026-03-08",
+  "totalPending": 20,
+  "attempted": 20,
+  "foundCount": 19,
+  "errorCount": 0,
+  "results": [
+    {
+      "recordId": "recv4Xx8e9yqbI",
+      "address": "1160 JEDBURGH ST, GLENDORA, CA, 91740",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "IMG_7897.PNG",
+          "found": true,
+          "prequalificationId": "AOQ4652114612",
+          "visibleText": "<\n23:24\n•1/\n67\n00 (\nOK\n...\n08:50\nIvy 3K\n*EEZF: Charissa Chow\n*##tıt : 1160 JEDBURGH ST,\nGLENDORA, CA, 91740\n*#1Z:626-551-8348\n*EBfE: felixzhang494@gmail.com\n*Prequalification ID: AOQ\n4652114612\n·İž30-40ft\n*Edison#J, MEMNЖIEМЖE\nIvy 5k\nEDISON\nIvy 3K",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recv4Xx8e9yqbI-0.PNG"
+        }
+      ],
+      "chosenAttachment": "IMG_7897.PNG",
+      "found": true,
+      "prequalificationId": "AOQ4652114612",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recv4XxEBImhlt",
+      "address": "141 Paseo Perdido, Walnut, CA 91789",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "IMG_7901.PNG",
+          "found": true,
+          "prequalificationId": "AN10312PP0272",
+          "visibleText": "23:26\n•il\n67\n<\n...\n0:23\n1\n11:06\nIvy 5K\n*E*Z7: Hongwei Hu\n*#ttıt:141 Paseo Perdido, Walnut,\nCA 91789\n*#IE:9096105110\n*#3ff:frankhu_la@yahoo.com\n*Prequalification ID:\nAN10312PP0272\n*Edison#J, MEMN*ŒÆИ#Ł\n*:ttE\nIvy 3K\nIvy 3k",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recv4XxEBImhlt-0.PNG"
+        }
+      ],
+      "chosenAttachment": "IMG_7901.PNG",
+      "found": true,
+      "prequalificationId": "AN10312PP0272",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recv6eY0PNDWST",
+      "address": "20 ROSSLYN IRVINE CA 92620",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "4f35cb79fd8cd5fe53ec02e216e4c7e8.jpg",
+          "found": true,
+          "prequalificationId": "A4692240R9184",
+          "visibleText": "11:14-\n:.!\n•••\nG\nDear YANCHUN,\nCongratulations! Your SCE Charge Ready Home\napplication has been pre-qualified and we have\nreserved a maximum rebate amount of $4,200.00 for\nyour electric panel upgrade. This is not a guarantee of\nfunds until program requirements have been\nconfirmed. Please visit the program website to access\na directory of participating contractors in your area.\nYour Prequalification ID is valid 180 days from the\ndate your application is approved.\nA Reminder: The Charge Ready Home",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recv6eY0PNDWST-0.jpg"
+        }
+      ],
+      "chosenAttachment": "4f35cb79fd8cd5fe53ec02e216e4c7e8.jpg",
+      "found": true,
+      "prequalificationId": "A4692240R9184",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recv6g2eDKobti",
+      "address": "2033 Bolanos  Ave Rowland Heights. Ca91748",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "IMG_8338.PNG",
+          "found": true,
+          "prequalificationId": "AUS7814MN7774",
+          "visibleText": "17:53€\n:!\n13\n00 (\n...\n12/15 21:09\nIvy 5k\n*E*Z·: youmei Y liu\n*IttIt: 2033 Bolanos Ave Rowland\nHeights. Ca91748\n*#iE: 6266175622\n*EBfẾ: 19780130shufangchen@gmail\n.com\n*Prequalification\nID:AUS7814MN7774\n**#Æ#ÈzæÆ™‡*: ⅝™fД\nR\n*Edison#E, MEMNЖIN#E\nIvy 3K",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recv6g2eDKobti-0.PNG"
+        }
+      ],
+      "chosenAttachment": "IMG_8338.PNG",
+      "found": true,
+      "prequalificationId": "AUS7814MN7774",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recv6gcxT3WdAf",
+      "address": "16573 ELM HAVEN DR, Hacienda Heights, CA 91745",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "IMG_8491.JPEG",
+          "found": true,
+          "prequalificationId": "APW8171398131",
+          "visibleText": "<\n14:57C\nMOMO#4200·|ЛБ₴··· (3)\nis valid 180 daye from the date your apptice\nis approved.\nA Reminder: The Charge Ready Home rebate\ncover the cost of electric panel upgrade from a\n100 amp panelto a 200 amp or hipher panel and\n240-volt circuit installation but does not cover the\ncost of purchasing an EV charger.\nYour Prequalification ID is: AUS7814MN7774\nSincerety,\nSCE Charge Ready Home Program\nHOmnIStereC Dya\nConter for Sustainable Energy*\nSan Diego CA 92110\n4- Reply\nDec 23, 2025 11:36\nIvy 3K\n*EZZ",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recv6gcxT3WdAf-0.JPEG"
+        }
+      ],
+      "chosenAttachment": "IMG_8491.JPEG",
+      "found": true,
+      "prequalificationId": "APW8171398131",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recfwaBuXJ",
+      "address": "15015 POPLAR AVE\nHACIENDA HTS, CA 91745-1422",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "6b758b3549bfd77c93a5b086ec99ecf1.jpg",
+          "found": true,
+          "prequalificationId": "APB94415E9401P",
+          "visibleText": "7:43 4\n•1lS10\nHome rebate covers the cost of\nelectric panel upgrade from a\n100 amp panel to a 200 amp or\nhigher panel and 240-volt\ncircuit installation but does not\ncover the cost of purchasing an\nEV charger.\nYour Prequalification ID is:\nAPB94415E9401\nPlease contact us if you have\nany questions or concerns.\nSincerely,\nSCF Charoe Readv Home\n•••\n31\n00\n00",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recfwaBuXJ-0.jpg"
+        }
+      ],
+      "chosenAttachment": "6b758b3549bfd77c93a5b086ec99ecf1.jpg",
+      "found": true,
+      "prequalificationId": "APB94415E9401P",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recjjjIHpL",
+      "address": "1026 S TERRI ANN DR, WEST COVINA, CA 91791",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "d153bf8adf27de69eebfe349ef70ab1d.jpg",
+          "found": true,
+          "prequalificationId": "AFS8598B18558",
+          "visibleText": "10:16\n:*!!5G° 100\n...\n•Pr\nApproved - SCE Charge Ready\nHome, CRH-038558\nDear ZUNYI,\nCongratulations! Your SCE Charge\nReady Home application has been\npre-qualified and we have reserved a\nmaximum rebate amount\nof $4,200.00 for your electric panel\nupgrade. This is not a guarantee of\nfunds until program requirements\nhave been confirmed. Please visit the\nprogram website to access a\ndirectory of participating contractors\nin your area. Your Prequalification ID\nis valid 180 days from the date\nyour applic",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recjjjIHpL-0.jpg"
+        },
+        {
+          "name": "073a842f6dd59d78cb2ad5c3bbe75cfd.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name ZUNYI\nLast Name\nLIU\nChange Password\nContact CSE to change account details.\nApplication ID 7\nSubmitted\nDate y\nInstallation\nSite\nAddress\nRebate Amount y\nCRH-038558\n12/15/2025\n1026 S TERRI ANN DR,\nWEST COVINA, CA,\n91791\n$4,200.00\nShowing 1 - 1 of 1 results\nEmailzunyiliu@att.net\nPhone (626) 679-1010\nApplication Statusy\nPrequalified\nZUNYILIU 8\nNew Application\nDue Date\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recjjjIHpL-1.png"
+        }
+      ],
+      "chosenAttachment": "d153bf8adf27de69eebfe349ef70ab1d.jpg",
+      "found": true,
+      "prequalificationId": "AFS8598B18558",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recPp2mnfP",
+      "address": "15605 Reed Dr, Fontana, CA 92336",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "fba894bf6da04b9edc3a5e2fb8793a5b.jpg",
+          "found": true,
+          "prequalificationId": "A1J9319079279",
+          "visibleText": "16:19\n•S96\n<\n••.\nApproved - SCE Charge\nReady Home, CRH-039279\nInbox\nS\nSCE Charge R... Dec 29\nto me v\n•.•\nDear Aurora,\nCongratulations! Your SCE Charge Ready\nHome application has been pre-qualified and\nwe have reserved a maximum rebate amount\nof $4,200.00 for your electric panel upgrade.\nThis is not a guarantee of funds until program\nrequirements have been confirmed. Please\nvisit the program website to access a\ndirectory of participating contractors in your\narea. Your Prequalification ID is valid",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recPp2mnfP-0.jpg"
+        },
+        {
+          "name": "9eed7dddaad6a6974c0ca9291d1819fd.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nW EDISON\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name Aurora\nLast Name Liang\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate\nCRH-039279\n12/27/2025\nCRH-013068\n02/19/2025\nInstallation\nSite\nAddress\n15605 Reed Dr,\nFontana, CA, 92336\n15605 Reed Dr.,\nFONTANA, CA, 92336\nRebate Amount V\n$4,200.00\n$4,200.00\nhoing 1 Hfd rctd\nAurora Liang &\nEmail auroralyf@gmail.com\nPhone (626) 660-5501\nNew Application\nApplication Statusy\nDue Date",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recPp2mnfP-1.png"
+        },
+        {
+          "name": "dbf3b5ee108d877cc634590fc76592ae.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "Application Details\n* Status\nStatus\nIn Progress\nE Project\nApplication ID\nProject Name\nApplication Request\nRequest Category\nRequest Type\nCustomer Type\nProject Address\n218323\nN/A\nModify or Evaluate Existing\nService\nUpgrade or Change\nPanel Upgrade\nResidential\n15605 Reed Dr\nFontana, CA, 92336\n• Contacts\nSubmitter\nPrimary\nLegal\nHAI LIN\nDonely1201@gmail.com\nHAI LIN\nDonely1201@gmail.com\nHAI LIN\nDonely1201@gmail.com\n8 View Application Summary\n• Progress\n• Comments\n@ Documents\n• Email\n• History\ng Actions",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recPp2mnfP-2.png"
+        }
+      ],
+      "chosenAttachment": "fba894bf6da04b9edc3a5e2fb8793a5b.jpg",
+      "found": true,
+      "prequalificationId": "A1J9319079279",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recJlpWyCD",
+      "address": "620 Citadel Dr, Walnut, CA 91789",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "087f6538467afd14646d731a4584fb37.jpg",
+          "found": true,
+          "prequalificationId": "AHF9790BY9750",
+          "visibleText": "10:08\n<\nE\n.••\n---- Forwarded message --\nFrom: SCE Charge Ready Home\n<evhome@scerebate.com>\nDate: Tue, Jan 6, 2026 at 9:38 AM\nSubject: Prequalification Application Approved -\nSCE Charge Ready Home, CRH-039750\nTo: <printexp1992@gmail.com>\nDear SHI SHYAN,\nCongratulations! Your SCE Charge Ready Home\napplication has been pre-qualified and we have\nreserved a maximum rebate amount\nof $4,200.00 for your electric panel upgrade.\nThis is not a guarantee of funds until program\nrequirements have been confirm",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recJlpWyCD-0.jpg"
+        },
+        {
+          "name": "image.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name SHI SHYAN\nLast Name\nWANG\nChange Password\nContact CSE to change account details.\nApplication ID 7\nSubmitted\nDate y\nInstallation\nSite\nAddress\nRebate Amount V\nCRH-039750\n01/05/2026\n620 Citadel Dr, Walnut,\nCA, 91789\n$4,200.00\nShowing 1 - 1 of 1 results\nSHI SHYAN WANG g\nEmail printexp1992@gmail.com\nPhone (909) 859-9339\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recJlpWyCD-1.png"
+        }
+      ],
+      "chosenAttachment": "087f6538467afd14646d731a4584fb37.jpg",
+      "found": true,
+      "prequalificationId": "AHF9790BY9750",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recwXaHq6v",
+      "address": "57 Oak Cliff Dr, Pomona, CA 91766",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "fabfa9549baef82c346fd23f4f2f1156.jpg",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "5:07\n4 WeChat\n<\n...\n*1*1: SCE Charge Ready Home\n<@vhome@scerebate.com>\nB#A: 2026#1A29E PST TF3:42:39\n451#1:vevinachu82@gmail.com\n1TFE: Prequalification Application\nApproved - SCE Charge Ready Home,\nCRH-040915\nDear SHU TING,\nCongratulations! Your SCE Charge Ready\nHome application has been pre-qualified\nand we have reserved a maximum rebate\namount of $4,200.00 for your electric\npanel upgrade. This is not a guarantee of\nfunds until program requirements have\nbeen confirmed. Please visit the program\n",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recwXaHq6v-0.jpg"
+        },
+        {
+          "name": "5064f24b57997da26275ae34e40c564a.jpg",
+          "found": true,
+          "prequalificationId": "ACJ0955H80915",
+          "visibleText": "8:30\n•0\nS38\n<\nE\n•••\nYour Prequalification ID is valid 180\ndays from the date your application is\napproved.\nA Reminder: The Charge Ready Home\nrebate covers the cost of electric panel\nupgrade from a 100 amp panel to a 200\namp or higher panel and 240-volt circuit\ninstallation but does not cover the cost of\npurchasing an EV charger.\nYour Prequalification ID is:\nACJ0955H80915\nPlease contact us if you have any\nquestions or concerns.\nSincerely,\nSCE Charge Ready Home Program\nAdministered by:\nCenter for ",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recwXaHq6v-1.jpg"
+        },
+        {
+          "name": "34fa29b601fce0c12564fe3beca693dc.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name SHU TING\nLast Name\nCHIU\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-040915\n01/22/2026\nInstallation\nSite\nAddress\n57 Oak Cliff Dr,\nPomona, CA, 91766\nRebate Amount V\n$4,200.00\nShowing 1 - 1 of 1 results\nSHU TING CHIU g\nEmail vevinachu82@gmail.com\nPhone (626) 674-8880\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recwXaHq6v-2.png"
+        }
+      ],
+      "chosenAttachment": "5064f24b57997da26275ae34e40c564a.jpg",
+      "found": true,
+      "prequalificationId": "ACJ0955H80915",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recHCTOY1r",
+      "address": "1649 E Merced Ave, West Covina, CA 91791 ",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "4c6e8b6e8bc0977cb4c639fe887a7ae.jpg",
+          "found": true,
+          "prequalificationId": "AYG1253KV1213",
+          "visibleText": "5:031\n< e\n•i| 5G+C\nSR\nSCE Charge Ready Home\nTo:yanachu@aol.com\n11:50 AM\nPrequalification Application\nApproved - SCE Charge Ready\nHome, CRH-041213\nDear ZAO BING,\nCongratulations! Your SCECharge Ready\nHome application has been pre-qualified and\nwe have reserved a maximum rebate amount\nof $4,200.00 for your electric panel upgrade.\nThis is not a guarantee of funds until program\nrequirements have been confirmed. Please\nvisit the program website to access a\ndirectory of participating contractors in yo",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recHCTOY1r-0.jpg"
+        },
+        {
+          "name": "c3c47bfba0e2e864e562b3a60ea648a.jpg",
+          "found": true,
+          "prequalificationId": "AYG1253KV1213P",
+          "visibleText": "5:03 4\n•• 5G+ 46\npating contractors In\nsur Prequalification ID is v\nV\nom the date your applicati.\napproved.\nA Reminder: The Charge Ready Home rebate\ncovers the cost of electric panel upgrade from\na 100 amp panel to a 200 amp or higher panel\nand 240-volt circuit installation but does not\ncover the cost of purchasing an EV charger.\nYour Prequalification ID is: AYG1253KV1213\nPlease contact usif you haveany questions or\nconcerns.\nSincerely,\nSCE Charge Ready Home Program\nAdministered by:\nCenter for S",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recHCTOY1r-1.jpg"
+        },
+        {
+          "name": "3739deae85610f622301984bcffb7ae.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name ZAO BING\nLast Name\nZHENG\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-041213\n01/26/2026\nInstallation\nSite\nAddress\n1649 E Merced Ave,\nWest Covina, CA, 91791\nRebate Amount V\n$4,200.00\nShowing 1 - 1 of 1 results\nZAO BING ZHENG •\nEmailyanachu@aol.com\nPhone (626) 206-2370\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recHCTOY1r-2.png"
+        }
+      ],
+      "chosenAttachment": "4c6e8b6e8bc0977cb4c639fe887a7ae.jpg",
+      "found": true,
+      "prequalificationId": "AYG1253KV1213",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recP0b0kO8",
+      "address": "1233 S Willow Ave, West Covina, CA 91790 ",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "cf61a19cf65919781526a8770942cb6b.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUTHERN CALIFORNIA\nWEDISON\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name WENKUI\nLast Name\nHE\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-041379\n01/28/2026\nInstallation\nSite\nAddress\n1233 S Willow Ave, West\nCovina, CA, 91790\nRebate Amount y\n$4,200.00\nShowing 1 - 1 of 1 results\nWENKUI HE\nEmailxflisahe@gmail.com\nPhone (626) 354-1265\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recP0b0kO8-0.png"
+        },
+        {
+          "name": "3514a8d3a089fbc677cb8631c2dbd227.jpg",
+          "found": true,
+          "prequalificationId": "ABF1419021379",
+          "visibleText": "10:38\n•15G°\n•••\nDear WENKUI,\nCongratulations! Your SCE Charge Ready Home\napplication has been pre-qualified and we have\nreserved a maximum rebate amount\nof $4,200.00 for your electric panel upgrade.\nThis is not a guarantee of funds until program\nrequirements have been confirmed. Please visit\nthe program website to access a directory of\nparticipating contractors in your area. Your\nPrequalification ID is valid 180 days from the\ndate your application is approved.\nA Reminder: The Charge Ready Home r",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recP0b0kO8-1.jpg"
+        }
+      ],
+      "chosenAttachment": "3514a8d3a089fbc677cb8631c2dbd227.jpg",
+      "found": true,
+      "prequalificationId": "ABF1419021379",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recQyvz42K",
+      "address": "1320 Ardilla Ave, La Puente, CA 91746 ",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "14d7aabbe00c9daa41e9931835c4d01.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUTHERN CALIFORNIA\nWEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name JUNYUAN\nLast Name\nCHEN\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-041589\n01/30/2026\nInstallation\nSite\nAddress\n1320 Ardilla Ave, La\nPuente, CA, 91746\nRebate Amount y\n$4,200.00\nShowing 1 - 1 of 1 results\nJUNYUAN CHEN\nEmaillingwenhong2020@gmail.com\nPhone (626)525-1402\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recQyvz42K-0.png"
+        },
+        {
+          "name": "051684e15ee7147c2ce1317420e0194.png",
+          "found": true,
+          "prequalificationId": "ANH1629V91589",
+          "visibleText": "*1#1: SCE Charge Ready Home <evhome@scerebate.com>\n#: 2026#2A40 A=T72:23\nEi2: Prequalification Application Approved - SCE Charge Ready Home, CRH-041589\n/:<lingwenhong2020@gmail.com>\nDear JUNYUAN,\nCongratulations! Your SCE Charge Ready Home application has been pre-qualified and we have reserved a maximum rebate amount of $4,200.00\nfor your electric panel upgrade. This is not a quarantee of funds until program requirements have been confirmed. Please visit the program website\nto access a director",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recQyvz42K-1.png"
+        }
+      ],
+      "chosenAttachment": "051684e15ee7147c2ce1317420e0194.png",
+      "found": true,
+      "prequalificationId": "ANH1629V91589",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recLixcP24",
+      "address": "653 Kempton Ave, Monterey Park, CA 91755",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "cb56e66e7d9c4cae2915dd7fae9bb7f.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUTHERN CALIFORNIA\n→EDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name DEYANG\nLast Name\nLIU\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-041761\n02/02/2026\nInstallation\nSite\nAddress\n653 Kempton Ave,\nMonterey Park, CA,\n91755\nRebate Amount y\n$4,200.00\nShowing 1 - 1 of 1 results\nDEYANG LIU g\nEmailIdy0821@gmail.com\nPhone (310) 890-8705\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recLixcP24-0.png"
+        },
+        {
+          "name": "1fed5d0a56e0d9272147b0d2e9a9544.jpg",
+          "found": true,
+          "prequalificationId": "ABY1801ZU1761",
+          "visibleText": "SCE Charge Ready Home\nPrequalification Application Approved - SCE Charge Ready Home, CRH-041761\n42:ldy0821@gmail.com\nC 4X1FX-\\..821@gmail.com\n2026#2A58 TF1:19\nDear DEYANG,\nCongratulations! Your SCE Charge Ready Home application has been pre-qualified and we have reserved a maximum rebate amount\nof $4,200.00 for your electric panel upgrade. This is not a guarantee of funds until program requirements have been confirmed. Please visit\nthe program website to access a directory of participating contr",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recLixcP24-1.jpg"
+        }
+      ],
+      "chosenAttachment": "1fed5d0a56e0d9272147b0d2e9a9544.jpg",
+      "found": true,
+      "prequalificationId": "ABY1801ZU1761",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recIFyufPQ",
+      "address": "3212 Rockhold Ave, Rosemead, CA 91770",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "d78a7acabee9a98d68dd1f7cfed4b32.jpg",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "12•39\nInbox\n1 MESSAGE\n85\nE, Summarize\nSR\nSCE Charge ReadyHomeYesterday\nTo: athach3212@yahoo.com>\nPrequalification Application\nApproved - SCE Charge Ready\nHome, CRH-041369\nDear SAI NGOC THACH,\nCongratulations! Your SCE Charge Ready\nHome application has been pre-qualified\nand we have reserved a maximum rebate\namount of $4,200.00 for your electric\npanel upgrade. This is not a guarantee of\nfunds until program requirements have\nbeen confirmed. Please visit the program\nwebsite to access a directory of",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recIFyufPQ-0.jpg"
+        },
+        {
+          "name": "c8e6ffa5ae5fc4a263e36c7cf5d32e7.jpg",
+          "found": true,
+          "prequalificationId": "AVS1409JG1369P",
+          "visibleText": "12:40\n•11-85\n< Inbox\nA Reminder: The Charge Ready Home\nrebate covers the cost of electric panel\nupgrade from a 100 amp panel to a 200\namp or higher panel and 240-volt circuit\ninstallation but does not cover the cost of\npurchasing an EV charger.\nYour Prequalification ID is:\nAVS1409JG1369\nPlease contact us if you have any\nquestions or concerns.\nSincerely,\nSCE Charge Ready Home Program\nAdministered by:\nCenter for Sustainable Energy®\nSan Diego, CA 92110\nOffice (760) 307-8055\nWebsite: evhome.sce.com\n",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recIFyufPQ-1.jpg"
+        },
+        {
+          "name": "1a65861871616ae01defa1d28865a3e.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUTHERN CALIFORNIA\nWEDISON\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name SAI NGOC THACH\nLast Name\nCHIEM\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-041369\n01/28/2026\nInstallation\nSite\nAddress\n3212 Rockhold Ave,\nRosemead, CA, 91770\nRebate Amount y\n$4,200.00\nShowing 1 - 1 of 1 results\nSAI NGOC THACH CHIEM\nEmailathach3212@yahoo.com\nPhone (626) 628-7388\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recIFyufPQ-2.png"
+        }
+      ],
+      "chosenAttachment": "c8e6ffa5ae5fc4a263e36c7cf5d32e7.jpg",
+      "found": true,
+      "prequalificationId": "AVS1409JG1369P",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recdv1GYO6",
+      "address": "702 Flint Spear Rd, Walnut, CA 91789",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "3167ec3dfe595926afde0b42df37dc4c.jpg",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "3:08\n75\n<Inbox\n^V\nSR\nSCE Charge Ready Home 1:38PM\nTo: jessicaquw1220@gmail.com >\nPrequalification Application\nApproved - SCE Charge Ready\nHome, CRH-042512\nDear WEILAN,\nCongratulations! Your SCE Charge Ready\nHome application has been pre-qualified\nand we have reserved a maximum rebate\namount of $4,200.00 for your electric\npanel upgrade. This is not a guarantee of\nfunds until program requirements have\nbeen confirmed. Please visit the program\nwebsite to access a directory of\nparticipating contracto",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recdv1GYO6-0.jpg"
+        },
+        {
+          "name": "810065c77582431a66d28c742b6b9260.jpg",
+          "found": true,
+          "prequalificationId": "AZK2552E42512",
+          "visibleText": "3:31\n<\nInbox Prequalification A...\nYour Prequalification ID is valid 180\ndays from the date your application is\napproved.\nA Reminder: The Charge Ready Home\nrebate covers the cost of electric panel\nupgrade from a 100 amp panel to a 200\namp or higher panel and 240-volt circuit\ninstallation but does not cover the cost of\npurchasing an EV charger.\nYour Prequalification ID is:\nAZK2552E42512\nPlease contact us if you have any\nquestions or concerns.\nSincerely,\nSCE Charge Ready Home Program\nAdministered ",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recdv1GYO6-1.jpg"
+        },
+        {
+          "name": "5549efc33813d26198f8b1425da3fe7e.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name WEILAN\nLast Name\nZHONG\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-042512\n02/12/2026\nInstallation\nSite\nAddress\n702 Flint Spear Rd,\nWalnut, CA, 91789\nRebate Amount V\n$4,200.00\nShowing 1 - 1 of 1 results\nWEILAN ZHONG 6\nEmail jessicaquw1220@gmail.com\nPhone (626) 688-5036\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recdv1GYO6-2.png"
+        }
+      ],
+      "chosenAttachment": "810065c77582431a66d28c742b6b9260.jpg",
+      "found": true,
+      "prequalificationId": "AZK2552E42512",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "reckwHrXA2",
+      "address": "624 Big Creek Ln, Walnut, CA 91789",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "f36a1610364197947409f4e91e24fc7.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUTHERN CALIFORNIA\nWEDISON\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name Yongkang\nLast Name\nChen\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-042200\n02/08/2026\nInstallation\nSite\nAddress\n624 Big Creek Ln,\nWalnut, CA, 91789\nRebate Amount y\n$4,200.00\nShowing 1 - 1 of 1 results\nYongkang Chen\nEmailkenchen0010@gmail.com\nPhone (626) 660-7142\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/reckwHrXA2-0.png"
+        },
+        {
+          "name": "abe3d4185fc19134df2b6e8c44c30e1.jpg",
+          "found": true,
+          "prequalificationId": "AE722405Z2200",
+          "visibleText": "11:50\nA\n:\n32\n<\n.••\n---- Forwarded message ----\n1F: SCE Charge Ready Home\n<evhome@scerebate.com>\nDate: 2026#2A18B#= 16:53\nSubject: Prequalification Application Approved -\nSCE Charge Ready Home, CRH-042200\nTo: <kenchen0010@gmail.com>\nDear Yongkang,\nCongratulations! Your SCE Charge Ready Home\napplication has been pre-qualified and we have\nreserved a maximum rebate amount\nof $4,200.00 for your electric panel upgrade.\nThis is not a guarantee of funds until program\nrequirements have been confirmed. Pl",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/reckwHrXA2-1.jpg"
+        }
+      ],
+      "chosenAttachment": "abe3d4185fc19134df2b6e8c44c30e1.jpg",
+      "found": true,
+      "prequalificationId": "AE722405Z2200",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recCiDJrTJ",
+      "address": "1285 E Kingsley Ave, Pomona, CA 91767",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "b949949bb04d189c27d0f048f9dac802.png",
+          "found": true,
+          "prequalificationId": "ADG1892NH1852",
+          "visibleText": "2/1: SCE Charge Ready Home <evhome@scerebate.com>\nBM: 2026÷2F98 GMT-8 12:46:15\n4x/: xiaoyusandy123@gmail.com\n#*: Prequalification Application Approved - SCE Charge Ready Home, CRH-041852\nDear JINRONG,\nCongratulations! Your SCE Charge Ready Home application has been pre-qualified and we have reserved a maximum rebate amount of $4,200.00\nfor your electric panel upgrade. This is not a guarantee of funds until program requirements have been confirmed. Please visit the program website\nto access a dir",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recCiDJrTJ-0.png"
+        },
+        {
+          "name": "47364281d87ac49c3e14bd423b82a5f9.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name JINRONG\nLast Name\nYU\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nInstallation\nSite\nAddress\nRebate Amount V\nCRH-041852\n02/03/2026\n1285 E Kingsley Ave,\nPomona, CA, 91767\n$4,200.00\nShowing 1 - 1 of 1 results\nJINRONG YU g\nEmail xiaoyusandy123@gmail.com\nPhone (626)988-3800\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recCiDJrTJ-1.png"
+        }
+      ],
+      "chosenAttachment": "b949949bb04d189c27d0f048f9dac802.png",
+      "found": true,
+      "prequalificationId": "ADG1892NH1852",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "rec8vEXDuv",
+      "address": "6838 Carob Ave, Rancho Cucamonga, CA 91739",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "d771832d74bbefcacce9b528943049c9.png",
+          "found": true,
+          "prequalificationId": "A3M2211N72171",
+          "visibleText": "Zf1: SCE Charge Ready Home <evhome@scerebate.com>\nBXA: 2026÷2A18B GMT-8 FF4:24:16\n421: jiaxinliwfg@gmail.com\nE*g: Prequalification Application Approved - SCE Charge Ready Home, CRH-042171\nDear JIAXIN,\nCongratulations! Your SCE Charge Ready Home application has been pre-qualified and we have reserved a maximum rebate amount of $4,200.00\nfor your electric panel upgrade. This is not a guarantee of funds until program requirements have been confirmed. Please visit the program website\nto access a dir",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/rec8vEXDuv-0.png"
+        },
+        {
+          "name": "6c5689cce5911f3a6e21167691907eaa.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUIHFKN CAHHINIA\nEDISON®\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name JIAXIN\nLast Name\nLI\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nInstallation\nSite\nAddress\nRebate Amount V\nCRH-042171\n02/07/2026\n6838 Carob Ave,\nRancho Cucamonga,\nCA, 91739\n$4,200.00\nShowing 1 - 1 of 1 results\nJIAXIN LI g\nEmail jiaxinliwfg@gmail.com\nPhone (626) 407-5666\nNew Application\nApplication Statusy\nDue Date\nPrequalified\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/rec8vEXDuv-1.png"
+        }
+      ],
+      "chosenAttachment": "d771832d74bbefcacce9b528943049c9.png",
+      "found": true,
+      "prequalificationId": "A3M2211N72171",
+      "wroteBack": true,
+      "error": null
+    },
+    {
+      "recordId": "recsbzWEk0",
+      "address": "14021 Fernview St, Whittier, CA 90605",
+      "date": "2026-03-08",
+      "attachments": [
+        {
+          "name": "a4baaea2b341ef0bc3cbbe35e0893ef.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "SOUTHERN CALIFORNIA\nWEDISON\nEnergy for What's Ahead®\nMy Dashboard\nContact Details\nFirst Name YONGHONG\nLast Name TAN\nChange Password\nContact CSE to change account details.\nApplication ID V\nSubmitted\nDate y\nCRH-042202\n02/08/2026\nInstallation\nSite\nAddress\n14021 Fernview St,\nWhittier, CA, 90605\nRebate Amount y\n$4,200.00\nShowing 1 - 1 of 1 results\nYONGHONG TAN\nEmailwingtam6@gmail.com\nPhone (626) 652-9620\nNew Application\nApplication Statusy\nDue Date\nResubmitted\nPage 1",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recsbzWEk0-0.png"
+        },
+        {
+          "name": "3e108d7a8a3ee7aa4d12d6ed35d8c18.png",
+          "found": false,
+          "prequalificationId": null,
+          "visibleText": "1:46\n•| g\n<\n_•••\nDear YONGHONG,\nWhile reviewing the supporting documents you\nprovided for your SCE Charge Ready Home\napplication CRH-042202, we noticed the\ntollowing issue(s):\n• Household Summary Form\n• Your Household Summary Form is\nmissing information in one or more\nsections. All sections must be\ncompleted, including section 1A, 1B,\n1C, every part of section 2, section 4,\nand both certification fields in section\n4. Please submit the Household\nSummary Form with all fields\ncompleted.\nPlease log ",
+          "localPath": "/Users/yixiao/.openclaw/workspace/output/ocr_samples/recsbzWEk0-1.png"
+        }
+      ],
+      "chosenAttachment": null,
+      "found": false,
+      "prequalificationId": null,
+      "wroteBack": false,
+      "error": null
+    }
+  ]
+}
