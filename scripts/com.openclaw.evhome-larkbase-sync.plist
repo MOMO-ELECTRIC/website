@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.openclaw.evhome-larkbase-sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/bash</string>
+      <string>/Users/yixiao/.openclaw/workspace/scripts/run_evhome_to_larkbase.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/yixiao/.openclaw/workspace</string>
+
+    <key>StartCalendarInterval</key>
+    <array>
+      <dict>
+        <key>Hour</key><integer>9</integer>
+        <key>Minute</key><integer>0</integer>
+      </dict>
+      <dict>
+        <key>Hour</key><integer>17</integer>
+        <key>Minute</key><integer>0</integer>
+      </dict>
+    </array>
+
+    <key>StandardOutPath</key>
+    <string>/Users/yixiao/.openclaw/workspace/output/evhome-larkbase-sync.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/yixiao/.openclaw/workspace/output/evhome-larkbase-sync.err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+  </dict>
+</plist>

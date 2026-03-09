@@ -14,7 +14,9 @@
     "calendar:sync": "node scripts/lark_to_calendar.js",
     "op:init": "bash scripts/op_tmux_init.sh",
     "lark:calendar:sync:1p": "bash scripts/lark_calendar_sync_from_1p.sh app",
-    "lark:calendar:sync:user:1p": "bash scripts/lark_calendar_sync_from_1p.sh user"
+    "lark:calendar:sync:user:1p": "bash scripts/lark_calendar_sync_from_1p.sh user",
+    "lark:user-token:exchange": "bash scripts/lark_user_token_exchange.sh",
+    "lark:calendar:sync:user:saved": "bash scripts/lark_calendar_sync_saved_user_token.sh"
   },
   "dependencies": {
     "playwright-core": "^1.58.2"

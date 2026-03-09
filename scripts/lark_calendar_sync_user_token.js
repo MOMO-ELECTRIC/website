@@ -14,7 +14,7 @@ import path from 'node:path';
 const APP_TOKEN = process.env.LARK_BASE_APP_TOKEN || 'N2TkbWZkvaVwqAsu4TRjeV61pTf';
 const TABLE_ID = process.env.LARK_BASE_TABLE_ID || 'tblLpRmOpsOceWSA';
 const VIEW_ID = process.env.LARK_BASE_VIEW_ID || 'vew7oDkEXl';
-const TARGET_CALENDAR_NAME = process.env.LARK_CALENDAR_NAME || '施工日历';
+const TARGET_CALENDAR_NAME = process.env.LARK_CALENDAR_NAME || 'MOMO 施工日历';
 const DRY_RUN = process.env.DRY_RUN !== 'false';
 const LIMIT = Number(process.env.LARK_LIMIT || '20');
 
@@ -22,15 +22,25 @@ function api(url, options = {}) { return fetch(url, options).then(async res => {
 
 function fmtTitle(fields) { return [fields['客户所在城市'], fields['电箱情况'], fields['充电桩情况']].map(v=>String(v||'').trim()).filter(Boolean).join(' '); }
 function fmtDesc(fields) { return [`客户姓名: ${fields['客户姓名']||''}`, `客户电话: ${fields['客户手机号']||''}`, `客户地址: ${fields['客户地址']||''}`].join('\n'); }
+function formatDateInTZ(ms, timeZone = 'America/Los_Angeles') {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(new Date(ms));
+  const map = Object.fromEntries(parts.map(p => [p.type, p.value]));
+  return `${map.year}-${map.month}-${map.day}`;
+}
 function mapToCalendarPayload(recordId, fields) {
-  const start = new Date(Number(fields['施工时间']));
-  const end = new Date(Number(fields['施工时间']) + 2 * 60 * 60 * 1000);
+  const startDate = formatDateInTZ(Number(fields['施工时间']));
+  const address = String(fields['客户地址'] || '').trim();
   return {
     summary: fmtTitle(fields),
     description: `${fmtDesc(fields)}\n\nOpenClaw Sync ID: larkbase-${recordId}`,
-    location: String(fields['客户地址'] || '').trim(),
-    start_time: { timestamp: String(Math.floor(start.getTime() / 1000)) },
-    end_time: { timestamp: String(Math.floor(end.getTime() / 1000)) },
+    location: address ? { name: address, address } : undefined,
+    start_time: { date: startDate },
+    end_time: { date: startDate },
     visibility: 'default'
   };
 }
@@ -46,10 +56,17 @@ async function main() {
   if (!target) throw new Error(`Target calendar not found: ${TARGET_CALENDAR_NAME}`);
   const calendarId = target.calendar_id || target.id;
 
-  const existingResp = await api(`https://open.larksuite.com/open-apis/calendar/v4/calendars/${encodeURIComponent(calendarId)}/events/search`, {
-    method: 'POST', headers, body: JSON.stringify({ query: 'OpenClaw Sync ID:', page_size: 500 })
-  });
-  const existingEvents = existingResp.data?.items || existingResp.data?.event_list || [];
+  let eventsPageToken = '';
+  const existingEvents = [];
+  do {
+    const url = new URL(`https://open.larksuite.com/open-apis/calendar/v4/calendars/${encodeURIComponent(calendarId)}/events`);
+    url.searchParams.set('page_size', '500');
+    if (eventsPageToken) url.searchParams.set('page_token', eventsPageToken);
+    const resp = await api(url.toString(), { headers });
+    existingEvents.push(...(resp.data?.items || []));
+    eventsPageToken = resp.data?.page_token || '';
+    if (!resp.data?.has_more) break;
+  } while (eventsPageToken);
   const existingBySyncId = new Map();
   for (const ev of existingEvents) {
     const desc = ev.description || '';

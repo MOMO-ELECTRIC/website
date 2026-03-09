@@ -19,9 +19,19 @@ function getCredentials() {
   const password = env('EVHOME_PASSWORD') || getOnePasswordField(item, env('EVHOME_OP_PASSWORD_FIELD', 'password'));
   return { item, username, password };
 }
+function chromeExecutable() {
+  return env('CHROME_EXECUTABLE_PATH', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome');
+}
 async function connectBrowser() {
   const cdpUrl = env('OPENCLAW_CDP_URL', 'http://127.0.0.1:18800');
-  return chromium.connectOverCDP(cdpUrl);
+  try {
+    return await chromium.connectOverCDP(cdpUrl);
+  } catch {
+    return await chromium.launch({
+      headless: false,
+      executablePath: chromeExecutable()
+    });
+  }
 }
 async function waitForDashboard(page) {
   const markers = [
