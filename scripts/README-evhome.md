@@ -1,15 +1,45 @@
-# evhome automation (first pass)
+# evhome automation
 
-This script logs into `https://apply.evhome.sce.com/`, reads the dashboard table, and exports rows whose status is `Paid`.
+This script logs into `https://apply.evhome.sce.com/`, reads the dashboard table, and exports EVHOME applications.
+
+## Credential flow
+
+Routine runs now prefer a local runtime credential file and only fall back to 1Password when local credentials are absent.
+
+Priority order:
+
+1. `EVHOME_USERNAME` + `EVHOME_PASSWORD`
+2. `secret/evhome_runtime.json` (or `EVHOME_RUNTIME_CREDENTIALS_FILE`)
+3. 1Password CLI via `op`
+
+Recommended local runtime file:
+
+```json
+{
+  "username": "apply@momoelec.com",
+  "password": "replace-me"
+}
+```
+
+Default path:
+
+```text
+secret/evhome_runtime.json
+```
+
+A safe template is tracked at:
+
+```text
+secret/evhome_runtime.example.json
+```
 
 ## Requirements
 
 - Google Chrome installed
 - OpenClaw browser profile already running (`cdpPort` normally `18800`)
-- 1Password CLI available and signed in via tmux per the 1Password skill
-- For durable secret reads, prefer the `*:1p` npm scripts, which reuse the live tmux shell where `eval $(op signin)` was run
 - Node.js available
 - `npm install` run once in the workspace
+- For 1Password fallback only: 1Password CLI available and signed in via tmux per the 1Password skill
 
 ## Install dependencies
 
@@ -18,48 +48,36 @@ cd ~/.openclaw/workspace
 npm install
 ```
 
-## 1Password item expectations
-
-Default item title:
-
-```text
-evhome / SCE program
-```
-
-Default fields the script reads:
-
-- `username`
-- `password`
-
-If your item uses different names, override them with env vars below.
-
 ## Run
+
+Run the direct scripts; they already prefer env/local runtime credentials and only hit 1Password if needed:
 
 ```bash
 cd ~/.openclaw/workspace
 npm run evhome:paid
+npm run evhome:all
 ```
 
-Preferred 1Password-backed path (runs inside the existing tmux-authenticated shell instead of calling `op` from a fresh shell):
+Compatibility wrappers still work and now also prefer the local runtime file before tmux/1Password:
 
 ```bash
 cd ~/.openclaw/workspace
 npm run evhome:paid:1p
-# or
 npm run evhome:all:1p
 ```
 
 ## Useful environment variables
 
 ```bash
-export EVHOME_OP_ITEM='evhome / SCE program'
+export EVHOME_RUNTIME_CREDENTIALS_FILE='secret/evhome_runtime.json'
+export EVHOME_OP_ITEM='apply.evhome.sce.com (apply@momoelec.com)'
 export EVHOME_OP_USERNAME_FIELD='username'
 export EVHOME_OP_PASSWORD_FIELD='password'
 export OPENCLAW_CDP_URL='http://127.0.0.1:18800'
 export EVHOME_OUTPUT='output/evhome_paid_projects.json'
 ```
 
-## Temporary fallback without 1Password
+## Temporary env override
 
 ```bash
 export EVHOME_USERNAME='your-login-email'
@@ -69,11 +87,14 @@ npm run evhome:paid
 
 ## Output
 
-Default output file:
+Default files:
 
 ```text
-output/evhome_paid_projects.json
+output/evhome_projects.json
+output/evhome_all_projects.json
 ```
+
+The export payload now records which credential source was used (`env`, `runtime-file`, `1password`, or `session`) without writing the secret values themselves.
 
 If login succeeds but the dashboard is not detected, debug artifacts are written to:
 
@@ -81,9 +102,20 @@ If login succeeds but the dashboard is not detected, debug artifacts are written
 output/debug/
 ```
 
+## EVHOME → Lark Base sync path
+
+`scripts/run_evhome_to_larkbase.sh` now follows the same credential preference order:
+
+1. `EVHOME_USERNAME` + `EVHOME_PASSWORD`
+2. `secret/evhome_runtime.json`
+3. tmux-backed 1Password session
+
+That means routine sync runs no longer require a live `op` session once the local runtime file is in place.
+
 ## Notes
 
-- This is a first pass and expects the dashboard to show a standard applications table after login.
+- This flow expects the dashboard to show a standard applications table after login.
 - If evhome changes selectors, the script may need adjustment.
-- The script now saves a screenshot + HTML dump when login lands on an unexpected page.
+- The script saves a screenshot + HTML dump when login lands on an unexpected page.
 - The script prefers connecting to the OpenClaw-managed Chrome CDP endpoint and falls back to launching Chrome directly.
+- `secret/*.json` is ignored by git so the runtime credential file stays local.

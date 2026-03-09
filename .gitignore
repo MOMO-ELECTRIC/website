@@ -1,0 +1,5 @@
+node_modules/
+output/
+secret/*.json
+!secret/evhome_runtime.example.json
+!secret/.gitkeep

@@ -1,17 +1,13 @@
 #!/usr/bin/env node
-import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright-core';
+import { DEFAULT_OP_ITEM, env, getCredentials, getRuntimePath } from './evhome_credentials.js';
 
 const EVHOME_URL = 'https://apply.evhome.sce.com/';
 const DEFAULT_OUTPUT = path.resolve(process.cwd(), 'output', 'evhome_projects.json');
 const DEFAULT_DEBUG_DIR = path.resolve(process.cwd(), 'output', 'debug');
-
-function env(name, fallback = undefined) {
-  return process.env[name] ?? fallback;
-}
 
 function ensureDir(filePath) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
@@ -19,22 +15,6 @@ function ensureDir(filePath) {
 
 function ensureFolder(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
-}
-
-function getOnePasswordField(item, field) {
-  return execFileSync('op', ['item', 'get', item, `--fields=${field}`, '--reveal'], {
-    encoding: 'utf8',
-    stdio: ['ignore', 'pipe', 'pipe']
-  }).trim();
-}
-
-function getCredentials() {
-  const item = env('EVHOME_OP_ITEM', 'evhome / SCE program');
-  const usernameField = env('EVHOME_OP_USERNAME_FIELD', 'username');
-  const passwordField = env('EVHOME_OP_PASSWORD_FIELD', 'password');
-  const username = env('EVHOME_USERNAME') || getOnePasswordField(item, usernameField);
-  const password = env('EVHOME_PASSWORD') || getOnePasswordField(item, passwordField);
-  return { item, username, password };
 }
 
 function chromeExecutable() {
@@ -173,13 +153,15 @@ async function extractAllRows(page) {
   return results;
 }
 
-async function loginIfNeeded(page, username, password) {
+async function loginIfNeeded(page, getCredentials) {
   await page.goto(EVHOME_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(2000);
 
   if (await waitForDashboard(page)) {
-    return;
+    return { usedCredentials: false, item: null, credentialSource: 'session' };
   }
+
+  const { item, username, password, source } = getCredentials();
 
   let emailInput = page.getByLabel(/email address/i).first();
   if (!(await emailInput.count())) {
@@ -221,24 +203,27 @@ async function loginIfNeeded(page, username, password) {
       ].join('\n')
     );
   }
+
+  return { usedCredentials: true, item, credentialSource: source };
 }
 
 async function main() {
   const output = path.resolve(env('EVHOME_OUTPUT', DEFAULT_OUTPUT));
   ensureDir(output);
 
-  const { item, username, password } = getCredentials();
   const browser = await connectBrowser();
   const context = browser.contexts()[0] || await browser.newContext();
   const page = context.pages()[0] || await context.newPage();
 
-  await loginIfNeeded(page, username, password);
+  const loginState = await loginIfNeeded(page, getCredentials);
   const projects = await extractAllRows(page);
 
   const payload = {
     generatedAt: new Date().toISOString(),
     source: EVHOME_URL,
-    opItem: item,
+    credentialSource: loginState.credentialSource || 'session',
+    runtimeFile: getRuntimePath(),
+    opItem: loginState.item || env('EVHOME_OP_ITEM', DEFAULT_OP_ITEM),
     count: projects.length,
     projects
   };

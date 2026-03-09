@@ -1,24 +1,14 @@
 #!/usr/bin/env node
-import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright-core';
+import { DEFAULT_OP_ITEM, env, getCredentials, getRuntimePath } from './evhome_credentials.js';
 
 const EVHOME_URL = 'https://apply.evhome.sce.com/';
 const DEFAULT_OUTPUT = path.resolve(process.cwd(), 'output', 'evhome_all_projects.json');
 
-function env(name, fallback = undefined) { return process.env[name] ?? fallback; }
 function ensureDir(filePath) { fs.mkdirSync(path.dirname(filePath), { recursive: true }); }
-function getOnePasswordField(item, field) {
-  return execFileSync('op', ['item', 'get', item, `--fields=${field}`, '--reveal'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
-}
-function getCredentials() {
-  const item = env('EVHOME_OP_ITEM', 'apply.evhome.sce.com (apply@momoelec.com)');
-  const username = env('EVHOME_USERNAME') || getOnePasswordField(item, env('EVHOME_OP_USERNAME_FIELD', 'username'));
-  const password = env('EVHOME_PASSWORD') || getOnePasswordField(item, env('EVHOME_OP_PASSWORD_FIELD', 'password'));
-  return { item, username, password };
-}
 function chromeExecutable() {
   return env('CHROME_EXECUTABLE_PATH', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome');
 }
@@ -45,8 +35,10 @@ async function waitForDashboard(page) {
 async function loginIfNeeded(page, getCredentials) {
   await page.goto(EVHOME_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(2000);
-  if (await waitForDashboard(page)) return { loggedIn: true, usedCredentials: false, item: null };
-  const { item, username, password } = getCredentials();
+  if (await waitForDashboard(page)) {
+    return { loggedIn: true, usedCredentials: false, item: null, credentialSource: 'session' };
+  }
+  const { item, username, password, source } = getCredentials();
   let emailInput = page.getByLabel(/email address/i).first();
   if (!(await emailInput.count())) emailInput = page.locator('label:has-text("Email Address")').locator('..').locator('input').first();
   let passwordInput = page.getByLabel(/^password$/i).first();
@@ -56,7 +48,7 @@ async function loginIfNeeded(page, getCredentials) {
   await page.getByRole('button', { name: /log ?in/i }).first().click();
   await page.waitForTimeout(6000);
   if (!(await waitForDashboard(page))) throw new Error('Dashboard did not appear after login');
-  return { loggedIn: true, usedCredentials: true, item };
+  return { loggedIn: true, usedCredentials: true, item, credentialSource: source };
 }
 async function findDashboardTable(page) {
   const table = page.locator('table').filter({ has: page.locator('thead th', { hasText: /application id/i }) }).first();
@@ -126,7 +118,16 @@ async function main() {
   const page = context.pages()[0] || await context.newPage();
   const loginState = await loginIfNeeded(page, getCredentials);
   const projects = await extractAllRows(page);
-  const payload = { generatedAt: new Date().toISOString(), source: EVHOME_URL, opItem: loginState.item || env('EVHOME_OP_ITEM', 'apply.evhome.sce.com (apply@momoelec.com)'), usedCredentials: !!loginState.usedCredentials, count: projects.length, projects };
+  const payload = {
+    generatedAt: new Date().toISOString(),
+    source: EVHOME_URL,
+    credentialSource: loginState.credentialSource || 'session',
+    runtimeFile: getRuntimePath(),
+    opItem: loginState.item || env('EVHOME_OP_ITEM', DEFAULT_OP_ITEM),
+    usedCredentials: !!loginState.usedCredentials,
+    count: projects.length,
+    projects
+  };
   fs.writeFileSync(output, JSON.stringify(payload, null, 2) + '\n');
   console.log(`Saved ${projects.length} total project(s) to ${output}`);
 }
