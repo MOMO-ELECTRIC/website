@@ -11,7 +11,10 @@
     "lark:update-crh": "node scripts/lark_update_crh.js",
     "lark:probe-write": "node scripts/lark_probe_write.js",
     "lark:update-all": "node scripts/lark_update_all.js",
-    "calendar:sync": "node scripts/lark_to_calendar.js"
+    "calendar:sync": "node scripts/lark_to_calendar.js",
+    "op:init": "bash scripts/op_tmux_init.sh",
+    "lark:calendar:sync:1p": "bash scripts/lark_calendar_sync_from_1p.sh app",
+    "lark:calendar:sync:user:1p": "bash scripts/lark_calendar_sync_from_1p.sh user"
   },
   "dependencies": {
     "playwright-core": "^1.58.2"
