@@ -7,6 +7,7 @@ This script logs into `https://apply.evhome.sce.com/`, reads the dashboard table
 - Google Chrome installed
 - OpenClaw browser profile already running (`cdpPort` normally `18800`)
 - 1Password CLI available and signed in via tmux per the 1Password skill
+- For durable secret reads, prefer the `*:1p` npm scripts, which reuse the live tmux shell where `eval $(op signin)` was run
 - Node.js available
 - `npm install` run once in the workspace
 
@@ -37,6 +38,15 @@ If your item uses different names, override them with env vars below.
 ```bash
 cd ~/.openclaw/workspace
 npm run evhome:paid
+```
+
+Preferred 1Password-backed path (runs inside the existing tmux-authenticated shell instead of calling `op` from a fresh shell):
+
+```bash
+cd ~/.openclaw/workspace
+npm run evhome:paid:1p
+# or
+npm run evhome:all:1p
 ```
 
 ## Useful environment variables

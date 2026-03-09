@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "evhome:paid": "node scripts/evhome_export_paid.js",
-    "evhome:all": "node scripts/evhome_export_paid.js",
+    "evhome:paid:1p": "bash scripts/evhome_export_paid_from_1p.sh",
+    "evhome:all": "node scripts/evhome_export_all.js",
+    "evhome:all:1p": "bash scripts/evhome_export_all_from_1p.sh",
     "lark:test": "node scripts/lark_base_test.js",
     "lark:match-paid": "node scripts/lark_match_paid.js",
     "lark:match-all": "node scripts/lark_match_all.js",
