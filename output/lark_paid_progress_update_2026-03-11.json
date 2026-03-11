@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-03-11T21:04:45.497Z",
+  "updatedCount": 3,
+  "updates": [
+    {
+      "before": {
+        "record_id": "recv4tKodqjewO",
+        "客户编号": "C20251204018",
+        "客户姓名": "YUH JEN CHENG",
+        "客户地址": "1517 Heather Hill Road, Hacienda Heights, CA 91745 ",
+        "EVHOME_STATUS": "已付款",
+        "客户进度": "已上传待回款",
+        "CRH_NO": "CRH-034528"
+      },
+      "afterProgress": "完工大吉"
+    },
+    {
+      "before": {
+        "record_id": "recv7ArUmwBUDF",
+        "客户编号": "C20260106054",
+        "客户姓名": "LAIFONG LEE CHEN",
+        "客户地址": "20218 wyn terrace walnut , CA 91789",
+        "EVHOME_STATUS": "已付款",
+        "客户进度": "已上传待回款",
+        "CRH_NO": "CRH-036818"
+      },
+      "afterProgress": "完工大吉"
+    },
+    {
+      "before": {
+        "record_id": "recv7AK7xgDvAw",
+        "客户编号": "C20260106055",
+        "客户姓名": "Esther Liang",
+        "客户地址": "5736 Rosebud Ct, CHINO HILLS, CA 91709\n",
+        "EVHOME_STATUS": "已付款",
+        "客户进度": "已上传待回款",
+        "CRH_NO": "CRH-038091"
+      },
+      "afterProgress": "完工大吉"
+    }
+  ]
+}
