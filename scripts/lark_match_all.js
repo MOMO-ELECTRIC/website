@@ -26,7 +26,8 @@ function normalizeAddress(input) {
 function score(ev, lk) { if (!ev.houseNumber || !lk.houseNumber) return 0; if (ev.houseNumber !== lk.houseNumber) return 0; let score = 50; if (ev.city && lk.city && ev.city === lk.city) score += 20; if (ev.street && lk.street) { if (ev.street === lk.street) score += 30; else { const evTokens = new Set(ev.street.split(' ')); const lkTokens = new Set(lk.street.split(' ')); let overlap = 0; for (const t of evTokens) if (lkTokens.has(t)) overlap += 1; score += Math.min(25, overlap * 5); } } return Math.min(100, score); }
 function mapStatus(status) { const s = String(status || '').trim().toLowerCase(); if (s === 'paid') return '已付款'; if (s === 'submitted') return '已上传'; if (s === 'approved') return '已批准'; return status || ''; }
 async function main() {
-  const appId = getField('username'); const appSecret = getField('credential');
+  const appId = process.env.LARK_APP_ID || getField('username');
+  const appSecret = process.env.LARK_APP_SECRET || getField('credential');
   const evhome = JSON.parse(fs.readFileSync(EVHOME_JSON, 'utf8')).projects || [];
   const tokenResp = await api('https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal', { method: 'POST', headers: { 'Content-Type': 'application/json; charset=utf-8' }, body: JSON.stringify({ app_id: appId, app_secret: appSecret }) });
   const tenantToken = tokenResp.tenant_access_token;

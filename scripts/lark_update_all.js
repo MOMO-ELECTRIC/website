@@ -12,7 +12,8 @@ const DRY_RUN = process.env.DRY_RUN !== 'false';
 function getField(field) { return execFileSync('op', ['item', 'get', ITEM, `--fields=${field}`, '--reveal'], { encoding: 'utf8' }).trim(); }
 async function api(url, options = {}) { const res = await fetch(url, options); const text = await res.text(); let data; try { data = JSON.parse(text); } catch { data = { raw: text }; } if (!res.ok || data.code) throw new Error(`HTTP ${res.status} :: ${JSON.stringify(data)}`); return data; }
 async function main() {
-  const appId = getField('username'); const appSecret = getField('credential');
+  const appId = process.env.LARK_APP_ID || getField('username');
+  const appSecret = process.env.LARK_APP_SECRET || getField('credential');
   const tokenResp = await api('https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal', { method: 'POST', headers: { 'Content-Type': 'application/json; charset=utf-8' }, body: JSON.stringify({ app_id: appId, app_secret: appSecret }) });
   const tenantToken = tokenResp.tenant_access_token;
   const headers = { Authorization: `Bearer ${tenantToken}`, 'Content-Type': 'application/json; charset=utf-8' };
