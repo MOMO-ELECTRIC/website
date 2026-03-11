@@ -14,15 +14,37 @@ const LIMIT = Number(process.env.LARK_CAL_LIMIT || '20');
 function getField(field) { return execFileSync('op', ['item', 'get', ITEM, `--fields=${field}`, '--reveal'], { encoding: 'utf8' }).trim(); }
 async function api(url, options = {}) { const res = await fetch(url, options); const text = await res.text(); let data; try { data = JSON.parse(text); } catch { data = { raw: text }; } if (!res.ok || data.code) throw new Error(`HTTP ${res.status} :: ${JSON.stringify(data)}`); return data; }
 function fmtTitle(fields) { return [fields['客户所在城市'], fields['电箱情况'], fields['充电桩情况']].map(v => String(v || '').trim()).filter(Boolean).join(' '); }
-function fmtDesc(fields) { return [`客户姓名: ${fields['客户姓名'] || ''}`, `客户电话: ${fields['客户手机号'] || ''}`].join('\n'); }
+function fmtDesc(fields) {
+  return [
+    `客户姓名: ${fields['客户姓名'] || ''}`,
+    `客户电话: ${fields['客户手机号'] || ''}`,
+    `客户地址: ${fields['客户地址'] || ''}`
+  ].join('\n');
+}
+function formatDateInTZ(ms, timeZone = 'America/Los_Angeles') {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(new Date(ms));
+  const map = Object.fromEntries(parts.map(p => [p.type, p.value]));
+  return `${map.year}-${map.month}-${map.day}`;
+}
+function addDays(dateStr, days) {
+  const d = new Date(`${dateStr}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
 function mapToCalendarPayload(recordId, fields) {
-  const start = new Date(Number(fields['施工时间']));
-  const end = new Date(Number(fields['施工时间']) + 2 * 60 * 60 * 1000);
+  const startDate = formatDateInTZ(Number(fields['施工时间']));
+  const endDate = addDays(startDate, 1);
   return {
     summary: fmtTitle(fields),
     description: `${fmtDesc(fields)}\n\nOpenClaw Sync ID: larkbase-${recordId}`,
-    start_time: { timestamp: String(Math.floor(start.getTime() / 1000)) },
-    end_time: { timestamp: String(Math.floor(end.getTime() / 1000)) },
+    location: String(fields['客户地址'] || '').trim(),
+    start_time: { date: startDate },
+    end_time: { date: endDate },
     visibility: 'default'
   };
 }

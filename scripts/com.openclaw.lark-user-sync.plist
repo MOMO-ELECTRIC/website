@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.openclaw.lark-user-sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/bash</string>
+      <string>-lc</string>
+      <string>cd /Users/yixiao/.openclaw/workspace &amp;&amp; /bin/bash scripts/lark_calendar_sync_saved_user_token.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/yixiao/.openclaw/workspace</string>
+
+    <key>StartInterval</key>
+    <integer>1800</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/yixiao/.openclaw/workspace/output/lark-user-sync.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/yixiao/.openclaw/workspace/output/lark-user-sync.err.log</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
