@@ -20,13 +20,19 @@ async function main() {
   const fields = fieldsResp.data?.items || [];
   const crhField = fields.find(f => (f.field_name || '').trim() === 'CRH_NO');
   const statusField = fields.find(f => (f.field_name || '').trim() === 'EVHOME_STATUS');
+  const progressField = fields.find(f => (f.field_name || '').trim() === '客户进度');
   if (!crhField) throw new Error('CRH_NO field not found');
   if (!statusField) throw new Error('EVHOME_STATUS field not found');
+  if (!progressField) throw new Error('客户进度 field not found');
   const matches = JSON.parse(fs.readFileSync(MATCH_FILE, 'utf8')).matches || [];
   const updates = matches.filter(m => m.matchStatus === 'high' && m.bestMatch?.recordId && m.applicationId).map(m => ({ recordId: m.bestMatch.recordId, applicationId: m.applicationId, evhomeStatusZh: m.evhomeStatusZh || m.evhomeStatus || '', evhomeAddress: m.evhomeAddress }));
   const results = [];
   for (const u of updates) {
-    const payload = { [crhField.field_name]: u.applicationId, [statusField.field_name]: u.evhomeStatusZh };
+    const normalizedStatus = String(u.evhomeStatusZh || '').trim();
+    const payload = { [crhField.field_name]: u.applicationId, [statusField.field_name]: normalizedStatus };
+    if (normalizedStatus === '已付款') {
+      payload[progressField.field_name] = '完工大吉';
+    }
     if (!DRY_RUN) {
       await api(`https://open.larksuite.com/open-apis/bitable/v1/apps/${APP_TOKEN}/tables/${TABLE_ID}/records/${u.recordId}`, { method: 'PUT', headers, body: JSON.stringify({ fields: payload }) });
     }
