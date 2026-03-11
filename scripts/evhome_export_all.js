@@ -23,6 +23,19 @@ async function connectBrowser() {
     });
   }
 }
+async function gotoWithRetry(page, url, options = {}, attempts = 3) {
+  let lastError;
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      await page.goto(url, { timeout: 60000, waitUntil: 'domcontentloaded', ...options });
+      return;
+    } catch (error) {
+      lastError = error;
+      if (i < attempts) await page.waitForTimeout(2000 * i);
+    }
+  }
+  throw lastError;
+}
 async function waitForDashboard(page) {
   const markers = [
     page.getByRole('heading', { name: /my dashboard/i }).first(),
@@ -33,7 +46,7 @@ async function waitForDashboard(page) {
   return false;
 }
 async function loginIfNeeded(page, getCredentials) {
-  await page.goto(EVHOME_URL, { waitUntil: 'domcontentloaded' });
+  await gotoWithRetry(page, EVHOME_URL);
   await page.waitForTimeout(2000);
   if (await waitForDashboard(page)) {
     return { loggedIn: true, usedCredentials: false, item: null, credentialSource: 'session' };
@@ -113,22 +126,41 @@ async function extractAllRows(page) {
 async function main() {
   const output = path.resolve(env('EVHOME_OUTPUT', DEFAULT_OUTPUT));
   ensureDir(output);
-  const browser = await connectBrowser();
-  const context = browser.contexts()[0] || await browser.newContext();
-  const page = context.pages()[0] || await context.newPage();
-  const loginState = await loginIfNeeded(page, getCredentials);
-  const projects = await extractAllRows(page);
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    source: EVHOME_URL,
-    credentialSource: loginState.credentialSource || 'session',
-    runtimeFile: getRuntimePath(),
-    opItem: loginState.item || env('EVHOME_OP_ITEM', DEFAULT_OP_ITEM),
-    usedCredentials: !!loginState.usedCredentials,
-    count: projects.length,
-    projects
-  };
-  fs.writeFileSync(output, JSON.stringify(payload, null, 2) + '\n');
-  console.log(`Saved ${projects.length} total project(s) to ${output}`);
+  let browser;
+  let page;
+  try {
+    browser = await connectBrowser();
+    const context = browser.contexts()[0] || await browser.newContext();
+    page = await context.newPage();
+    page.setDefaultTimeout(30000);
+    page.setDefaultNavigationTimeout(60000);
+    const loginState = await loginIfNeeded(page, getCredentials);
+    const projects = await extractAllRows(page);
+    const payload = {
+      generatedAt: new Date().toISOString(),
+      source: EVHOME_URL,
+      credentialSource: loginState.credentialSource || 'session',
+      runtimeFile: getRuntimePath(),
+      opItem: loginState.item || env('EVHOME_OP_ITEM', DEFAULT_OP_ITEM),
+      usedCredentials: !!loginState.usedCredentials,
+      count: projects.length,
+      projects
+    };
+    fs.writeFileSync(output, JSON.stringify(payload, null, 2) + '\n');
+    console.log(`Saved ${projects.length} total project(s) to ${output}`);
+  } catch (error) {
+    if (page) {
+      const debugDir = path.resolve(process.cwd(), 'output', 'debug');
+      fs.mkdirSync(debugDir, { recursive: true });
+      const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+      try { await page.screenshot({ path: path.join(debugDir, `evhome-export-failure-${stamp}.png`), fullPage: true }); } catch {}
+      try { fs.writeFileSync(path.join(debugDir, `evhome-export-failure-${stamp}.html`), await page.content()); } catch {}
+    }
+    throw error;
+  } finally {
+    if (browser) {
+      try { await browser.close(); } catch {}
+    }
+  }
 }
 main().catch(error => { console.error(error?.stack || String(error)); process.exitCode = 1; });
