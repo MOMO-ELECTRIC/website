@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Invoice 950</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; color: #111; margin: 0; background: #fff; }
+    .page { width: 900px; margin: 0 auto; padding: 36px 42px 28px; box-sizing: border-box; }
+    .top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 26px; }
+    .invoice-title { font-size: 38px; letter-spacing: 1px; font-weight: 700; }
+    .invoice-meta { text-align: right; font-size: 16px; line-height: 1.5; }
+    .cols { display: flex; justify-content: space-between; gap: 40px; margin: 10px 0 26px; }
+    .col { flex: 1; }
+    .label { font-size: 12px; color: #666; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 10px; }
+    .company-name { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+    .text { font-size: 15px; line-height: 1.6; }
+    table { width: 100%; border-collapse: collapse; margin-top: 14px; }
+    thead th { text-align: left; font-size: 13px; color: #555; padding: 10px 8px; border-bottom: 1px solid #999; }
+    tbody td { padding: 12px 8px; border-bottom: 1px solid #e6e6e6; font-size: 15px; }
+    .qty { width: 70px; text-align: center; }
+    .money { width: 160px; text-align: right; white-space: nowrap; }
+    .total-row td { border-bottom: none; padding-top: 18px; font-weight: 700; font-size: 18px; }
+    .total-label { text-align: right; }
+    .footer { display: flex; justify-content: space-between; margin-top: 42px; font-size: 13px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top">
+      <div class="invoice-title">INVOICE</div>
+      <div class="invoice-meta">
+        <div><strong>#951</strong></div>
+        <div>Issued 3/11/2026</div>
+      </div>
+    </div>
+
+    <div class="cols">
+      <div class="col">
+        <div class="company-name">MOMO ELECTRICAL SERVICES LLC</div>
+        <div class="text">
+          Yixiao Wang<br>
+          626-247-1135<br>
+          tex@momoelec.com<br>
+          7810 Hoadly Ct<br>
+          Fontana, CA 92336
+        </div>
+      </div>
+      <div class="col">
+        <div class="label">BILL TO</div>
+        <div class="text">
+          <strong>ANQUAN ZHENG</strong><br>
+          5107108816<br>
+          LD8BYM@gmail.com<br>
+          14880 Ash Dr,<br>
+          Chino Hills, CA 91709
+        </div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="qty">QTY</th>
+          <th class="money">Price, USD</th>
+          <th class="money">Amount, USD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LEVEL 2 EV CHARGER INSTALLATION</td>
+          <td class="qty">1</td>
+          <td class="money">$500.00</td>
+          <td class="money">$500.00</td>
+        </tr>
+        <tr>
+          <td>New 200A Panel Installation</td>
+          <td class="qty">1</td>
+          <td class="money">$3,200.00</td>
+          <td class="money">$3,200.00</td>
+        </tr>
+        <tr>
+          <td>Permitting</td>
+          <td class="qty">1</td>
+          <td class="money">$500.00</td>
+          <td class="money">$500.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3" class="total-label">Total</td>
+          <td class="money">$4,200.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      <div>Inv. #951</div>
+      <div>1 of 1</div>
+    </div>
+  </div>
+</body>
+</html>
