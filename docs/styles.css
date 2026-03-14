@@ -15,13 +15,22 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; }
+html {
+  background:
+    radial-gradient(circle at top, rgba(88, 14, 24, 0.28), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(106, 20, 32, 0.18), transparent 28%),
+    linear-gradient(180deg, #0d0e13 0%, #08090d 100%);
+  background-color: #08090d;
+}
 body {
+  min-height: 100svh;
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top, rgba(88, 14, 24, 0.28), transparent 32%),
     radial-gradient(circle at bottom right, rgba(106, 20, 32, 0.18), transparent 28%),
     linear-gradient(180deg, #0d0e13 0%, #08090d 100%);
+  background-color: #08090d;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -69,10 +78,15 @@ button:active,
 .app-shell {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding: 22px 24px 18px;
+  padding:
+    calc(22px + env(safe-area-inset-top, 0px))
+    calc(24px + env(safe-area-inset-right, 0px))
+    calc(18px + env(safe-area-inset-bottom, 0px))
+    calc(24px + env(safe-area-inset-left, 0px));
 }
 
 .circuit-bg {
@@ -831,7 +845,11 @@ h1 {
 
 @media (max-width: 720px) {
   .app-shell {
-    padding: 18px 16px 20px;
+    padding:
+      calc(18px + env(safe-area-inset-top, 0px))
+      calc(16px + env(safe-area-inset-right, 0px))
+      calc(20px + env(safe-area-inset-bottom, 0px))
+      calc(16px + env(safe-area-inset-left, 0px));
   }
 
   .brand {
