@@ -240,12 +240,17 @@ button:active,
 }
 
 .nav-drawer {
-  display: contents;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  margin-left: auto;
+  min-width: 0;
+  gap: 12px;
 }
 
 .topnav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 10px;
   flex-wrap: nowrap;
 }
@@ -787,7 +792,10 @@ h1 {
   }
 
   .nav-drawer {
-    display: contents;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 10px;
   }
 
   .topnav {
@@ -801,7 +809,10 @@ h1 {
   }
 
   .lang-wrap {
-    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
   }
 
   h1 {
