@@ -2,11 +2,13 @@ const i18n = {
   zh: {
     brandTag: '持证电力承包商 · Southern California',
     navServices: '主营业务',
-    navRebate: 'SCE电箱升级补贴',
-    navContact: '联系方式',
+    navRebate: '补贴入口',
+    navContact: '联系我们',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
-    heroTitle: '专业、清晰、可信赖的电力解决方案',
-    heroText: 'MOMO Electrical Services LLC 专注于储能系统、住宅电力服务、配电箱升级和商业电力服务。页面保留独立 SCE电箱升级补贴入口，让主营业务和补贴申请逻辑清晰分开。',
+    heroTitle: '点亮南加州',
+    heroText: 'MOMO Electrical Services LLC 为住宅与商业客户提供专业电力解决方案，专注于储能系统、配电箱升级、住宅电力服务和商业电力服务。',
+    ctaCall: '立即获取报价',
+    ctaRebate: '进入 SCE / EV 补贴入口',
     metaLicense: 'CSLB LICENSE #1147309',
     metaSce: 'SCE 认证',
     metaTesla: 'Tesla 认证',
@@ -16,31 +18,46 @@ const i18n = {
     svc3: '配电箱升级 Panel Upgrade',
     svc4: '商业电力服务 Commercial Electrical Services',
     panelServicesKicker: 'CORE SERVICES',
-    panelServicesTitle: '主营业务聚焦在真正有转化价值的电力服务',
-    panelServicesItem1: '储能系统设计与安装，适配家庭能源升级需求',
-    panelServicesItem2: '住宅电力服务，处理新增回路、日常配电与系统优化',
-    panelServicesItem3: 'Panel Upgrade，提升容量、安全性和未来扩展能力',
-    panelServicesItem4: '商业电力服务，强调现场执行与项目配合',
-    panelRebateKicker: 'SCE PANEL UPGRADE REBATE',
-    panelRebateTitle: 'SCE电箱升级补贴单独成页，不和主营业务混在一起',
-    panelRebateText: '官网主页面负责品牌、执照与业务说明；SCE电箱升级补贴则单独保留专门入口，方便客户直接进入表单。',
-    panelRebateNote: '建议后续将这个入口做成主站顶部固定 Tab 与独立落地页。',
-    panelContactKicker: 'CONTACT',
-    panelContactTitle: '让客户一眼就知道你是谁、做什么、怎么联系',
-    contactCompany: '公司',
-    contactOwner: '负责人 / 创始人',
-    contactPhone: '电话',
-    contactEmail: '邮箱',
-    footerRight: '中英双语单页官网概念版'
+    panelServicesTitle: '围绕真实项目需求打造的专业电力服务',
+    panelServicesItem1Title: '储能系统',
+    panelServicesItem1: '面向现代家庭能源升级需求的储能系统规划与安装。',
+    panelServicesItem2Title: '住宅电力服务',
+    panelServicesItem2: '新增回路、故障排查、配电优化与整洁可靠的住宅电力升级。',
+    panelServicesItem3Title: '配电箱升级',
+    panelServicesItem3: '注重容量、安全性与规范性的配电箱升级，为未来扩展做好准备。',
+    panelServicesItem4Title: '商业电力服务',
+    panelServicesItem4: '强调现场执行力与项目配合度的商业电力服务。',
+    panelRebateKicker: 'EV REBATE',
+    panelRebateTitle: '如果你是来申请补贴，直接进入专门入口就行。',
+    panelRebateText: '官网主站专注品牌、执照与主营业务说明；补贴客户则可以直接进入专门页面，流程更清楚，转化也更直接。',
+    panelRebateNote: '这样可以让官网保持专业简洁，同时保留独立的补贴获客入口。',
+    panelContactKicker: 'CONTACT US',
+    panelContactTitle: '联系我们',
+    panelQuoteKicker: 'GET A QUOTE',
+    panelQuoteTitle: '立即提交询价',
+    contactLead: '我们将会第一时间回复您的请求。',
+    contactPhone: 'SERVICE LINE',
+    contactEmail: '邮件',
+    contactWechat: '微信二维码',
+    formName: '姓名',
+    formNamePlaceholder: '请输入姓名',
+    formContact: '联系方式',
+    formContactPlaceholder: '电话、邮箱或微信',
+    formNeed: '业务需求简介',
+    formNeedPlaceholder: '例如：Panel Upgrade、储能系统、住宅电力改造、商业项目等',
+    formSubmit: '立即提交询价',
+    footerRight: '持证电力承包商 · 服务 Southern California'
   },
   en: {
-    brandTag: 'Licensed Contractor · Southern California',
+    brandTag: 'Licensed Electrical Contractor · Southern California',
     navServices: 'Services',
-    navRebate: 'SCE Panel Upgrade Rebate',
-    navContact: 'Contact',
+    navRebate: 'Rebate',
+    navContact: 'Get a Quote',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
-    heroTitle: 'Reliable, clear, and trustworthy electrical solutions',
-    heroText: 'MOMO Electrical Services LLC focuses on energy storage systems, residential electrical services, panel upgrades, and commercial electrical services, while keeping EV Rebate as a separate and clear pathway.',
+    heroTitle: 'We Energize So-Cal',
+    heroText: 'MOMO Electrical Services LLC provides professional electrical solutions for homes and businesses, with a focus on energy storage systems, panel upgrades, residential electrical services, and commercial electrical services.',
+    ctaCall: 'Get a Quote Now',
+    ctaRebate: 'SCE / EV Rebate Entry',
     metaLicense: 'CSLB LICENSE #1147309',
     metaSce: 'SCE Certified',
     metaTesla: 'Tesla Certified',
@@ -50,22 +67,35 @@ const i18n = {
     svc3: 'Panel Upgrade',
     svc4: 'Commercial Electrical Services',
     panelServicesKicker: 'CORE SERVICES',
-    panelServicesTitle: 'Core services centered on practical electrical work that converts',
-    panelServicesItem1: 'Energy storage system solutions for modern home energy upgrades',
-    panelServicesItem2: 'Residential electrical services for circuits, power distribution, and day-to-day needs',
-    panelServicesItem3: 'Panel upgrades that improve capacity, safety, and future readiness',
-    panelServicesItem4: 'Commercial electrical services with a focus on execution and jobsite coordination',
+    panelServicesTitle: 'Professional electrical services built for real-world jobs and long-term reliability',
+    panelServicesItem1Title: 'Energy Storage Systems',
+    panelServicesItem1: 'Battery storage planning and installation for modern energy resilience and home upgrades.',
+    panelServicesItem2Title: 'Residential Electrical',
+    panelServicesItem2: 'Circuit additions, troubleshooting, service improvements, and clean electrical upgrades.',
+    panelServicesItem3Title: 'Panel Upgrades',
+    panelServicesItem3: 'Capacity, safety, and code-focused panel work prepared for future expansion.',
+    panelServicesItem4Title: 'Commercial Electrical',
+    panelServicesItem4: 'Practical field execution and dependable coordination for commercial projects.',
     panelRebateKicker: 'EV REBATE',
-    panelRebateTitle: 'EV rebate lives in its own path, separate from the core company message',
-    panelRebateText: 'The main website should explain the brand, license, and service scope. EV Rebate should stay as a separate direct entry point for customers.',
-    panelRebateNote: 'Recommended next step: turn this into a dedicated top navigation tab plus its own landing page.',
-    panelContactKicker: 'CONTACT',
-    panelContactTitle: 'Make it instantly clear who you are, what you do, and how to reach you',
-    contactCompany: 'Company',
-    contactOwner: 'Owner / Founder',
-    contactPhone: 'Phone',
+    panelRebateTitle: 'Need the rebate path? Go directly to the dedicated intake page.',
+    panelRebateText: 'The main company website stays focused on brand, licensing, and core services. Rebate customers can go straight to the dedicated portal without extra steps.',
+    panelRebateNote: 'This keeps the company website clean while preserving a direct, conversion-focused rebate entry point.',
+    panelContactKicker: 'CONTACT US',
+    panelContactTitle: 'Contact Us',
+    panelQuoteKicker: 'GET A QUOTE',
+    panelQuoteTitle: 'Submit a quote request now',
+    contactLead: 'We will respond to your request as soon as possible.',
+    contactPhone: 'SERVICE LINE',
     contactEmail: 'Email',
-    footerRight: 'Single-page bilingual landing concept'
+    contactWechat: 'WeChat QR Code',
+    formName: 'Name',
+    formNamePlaceholder: 'Your name',
+    formContact: 'Contact info',
+    formContactPlaceholder: 'Phone, email, or WeChat',
+    formNeed: 'Project summary',
+    formNeedPlaceholder: 'Example: panel upgrade, energy storage system, residential electrical work, or commercial project',
+    formSubmit: 'Submit quote request now',
+    footerRight: 'Licensed contractor serving Southern California'
   }
 };
 
@@ -83,6 +113,11 @@ function applyLang(lang) {
     const value = dict[attrMap[key] || key];
     if (value) el.textContent = value;
   });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.dataset.i18nPlaceholder;
+    const value = dict[key];
+    if (value) el.setAttribute('placeholder', value);
+  });
   document.querySelectorAll('.lang-toggle').forEach((btn) => {
     btn.textContent = lang === 'zh' ? 'EN / 中文' : '中文 / EN';
   });
@@ -96,6 +131,10 @@ function activatePanel(name) {
   document.querySelectorAll('.panel-card').forEach((card) => {
     card.classList.toggle('is-active', card.dataset.panelContent === name);
   });
+
+  const showContactHero = name === 'contact';
+  document.querySelector('[data-hero-copy="default"]')?.classList.toggle('is-active', !showContactHero);
+  document.querySelector('[data-hero-copy="contact"]')?.classList.toggle('is-active', showContactHero);
 }
 
 const initialLang = localStorage.getItem('momo-lang') || 'zh';
@@ -112,6 +151,41 @@ document.querySelectorAll('.lang-toggle').forEach((btn) => {
 document.querySelectorAll('.nav-pill').forEach((btn) => {
   btn.addEventListener('click', () => activatePanel(btn.dataset.panel));
 });
+
+const quoteCta = document.getElementById('quoteCta');
+if (quoteCta) {
+  quoteCta.addEventListener('click', (event) => {
+    event.preventDefault();
+    activatePanel('contact');
+    document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    document.getElementById('quoteName')?.focus();
+  });
+}
+
+const quoteForm = document.getElementById('quoteForm');
+if (quoteForm) {
+  quoteForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const lang = localStorage.getItem('momo-lang') || 'zh';
+    const name = document.getElementById('quoteName')?.value.trim();
+    const contact = document.getElementById('quoteContact')?.value.trim();
+    const need = document.getElementById('quoteNeed')?.value.trim();
+
+    if (!name || !contact || !need) return;
+
+    const subject = lang === 'zh'
+      ? `网站报价咨询 - ${name}`
+      : `Website Quote Request - ${name}`;
+
+    const body = lang === 'zh'
+      ? `您好，\n\n我想咨询报价，信息如下：\n\n姓名：${name}\n联系方式：${contact}\n业务需求简介：${need}\n\n谢谢。`
+      : `Hello,\n\nI would like to request a quote. My information is below:\n\nName: ${name}\nContact info: ${contact}\nProject summary: ${need}\n\nThank you.`;
+
+    const mailto = `mailto:customer@momoelec.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+  });
+}
 
 
 const appShell = document.querySelector('.app-shell');
