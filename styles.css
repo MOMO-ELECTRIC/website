@@ -537,7 +537,7 @@ h1 {
   display: inline-grid;
   grid-template-columns: minmax(220px, max-content) minmax(132px, 145px);
   gap: 20px;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   justify-items: start;
   padding: 0;
@@ -601,11 +601,11 @@ h1 {
   align-items: center;
   justify-content: center;
   justify-self: start;
-  align-self: center;
+  align-self: start;
   padding: 8px;
   min-height: auto;
   height: auto;
-  margin-top: 0;
+  margin-top: -2px;
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
   border: 1px solid rgba(255,255,255,0.08);
