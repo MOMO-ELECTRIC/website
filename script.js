@@ -155,7 +155,7 @@ function applyLang(lang) {
 }
 
 function activatePanel(name) {
-  document.querySelectorAll('.nav-pill').forEach((btn) => {
+  document.querySelectorAll('.nav-pill[data-panel]').forEach((btn) => {
     btn.classList.toggle('is-active', btn.dataset.panel === name);
   });
   document.querySelectorAll('.panel-card').forEach((card) => {
@@ -170,6 +170,7 @@ function activatePanel(name) {
 }
 
 const initialLang = localStorage.getItem('momo-lang') || 'zh';
+const initialPanel = document.body?.dataset.defaultPanel || 'services';
 const circuitBgSvg = document.querySelector('.circuit-bg svg');
 
 function syncCircuitBackgroundScale() {
@@ -181,7 +182,7 @@ function syncCircuitBackgroundScale() {
 }
 
 applyLang(initialLang);
-activatePanel('services');
+activatePanel(initialPanel);
 syncCircuitBackgroundScale();
 
 document.querySelectorAll('.lang-toggle').forEach((btn) => {
@@ -191,7 +192,7 @@ document.querySelectorAll('.lang-toggle').forEach((btn) => {
   });
 });
 
-document.querySelectorAll('.nav-pill').forEach((btn) => {
+document.querySelectorAll('.nav-pill[data-panel]').forEach((btn) => {
   btn.addEventListener('click', () => activatePanel(btn.dataset.panel));
 });
 
@@ -257,7 +258,7 @@ if (menuToggle) {
   });
 }
 
-document.querySelectorAll('.nav-pill').forEach((btn) => {
+document.querySelectorAll('.nav-pill[data-panel]').forEach((btn) => {
   btn.addEventListener('click', () => {
     if (window.innerWidth <= 820) setMenuOpen(false);
   });

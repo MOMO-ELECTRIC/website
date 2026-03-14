@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#180a10">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body data-default-panel="services">
   <div class="app-shell">
     <div class="circuit-bg" aria-hidden="true">
       <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
@@ -189,8 +189,8 @@
       <div class="nav-drawer" id="primaryNav">
         <nav class="topnav" aria-label="Primary">
           <button class="nav-pill is-active" data-panel="services" data-i18n="nav.services">首页</button>
-          <button class="nav-pill" data-panel="rebate" data-i18n="nav.rebate">免费电箱升级</button>
-          <button class="nav-pill" data-panel="contact" data-i18n="nav.contact">联系方式</button>
+          <a class="nav-pill" href="./rebate.html" data-i18n="nav.rebate">免费电箱升级</a>
+          <a class="nav-pill" href="./contact.html" data-i18n="nav.contact">联系方式</a>
         </nav>
 
         <div class="lang-wrap">
@@ -207,8 +207,8 @@
           <p class="hero-text" data-i18n="heroText">MOMO Electrical Services LLC provides professional electrical solutions for homes and businesses, with a focus on energy storage systems, panel upgrades, residential electrical services, and commercial electrical services.</p>
 
           <div class="hero-actions">
-            <a class="cta-primary" href="#quote" id="quoteCta" data-i18n="ctaCall">立即获取报价</a>
-            <a class="cta-secondary" href="#rebate" id="homeRebateCta" data-i18n="ctaRebate">了解 SCE 免费电箱升级</a>
+            <a class="cta-primary" href="./contact.html" data-i18n="ctaCall">立即获取报价</a>
+            <a class="cta-secondary" href="./rebate.html" data-i18n="ctaRebate">了解 SCE 免费电箱升级</a>
           </div>
 
           <div class="hero-meta hero-meta-inline">
@@ -347,6 +347,6 @@
     </footer>
   </div>
 
-  <script src="./script.js?v=5"></script>
+  <script src="./script.js?v=6"></script>
 </body>
 </html>
