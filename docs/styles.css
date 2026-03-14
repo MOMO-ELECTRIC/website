@@ -45,22 +45,44 @@ button { font: inherit; }
 
 .circuit-lines path {
   fill: none;
-  stroke: url(#lineGlow);
-  stroke-width: 2.2;
   stroke-linecap: round;
-  stroke-dasharray: 12 18 120 18;
-  animation: flow 12s linear infinite;
-  opacity: 0.58;
+  stroke-linejoin: round;
 }
 
-.circuit-lines path:nth-child(2) { animation-duration: 9s; }
-.circuit-lines path:nth-child(3) { animation-duration: 14s; }
-.circuit-lines path:nth-child(4) { animation-duration: 10s; }
-.circuit-lines path:nth-child(5) { animation-duration: 11s; }
+.pcb-base path {
+  stroke: rgba(120, 24, 34, 0.72);
+  stroke-width: 2.2;
+  opacity: 0.72;
+}
 
-.nodes circle {
-  fill: #ff3449;
-  opacity: 0.8;
+.pcb-flow path {
+  stroke: url(#lineGlow);
+  stroke-width: 2.2;
+  stroke-dasharray: 0 18 58 220;
+  animation: flow 9s linear infinite;
+  opacity: 0.88;
+}
+
+.pcb-flow path:nth-child(2) { animation-duration: 7.5s; }
+.pcb-flow path:nth-child(3) { animation-duration: 11s; }
+.pcb-flow path:nth-child(4) { animation-duration: 8.3s; }
+.pcb-flow path:nth-child(5) { animation-duration: 10.5s; }
+
+.board-chips rect {
+  fill: rgba(255,255,255,0.02);
+  stroke: rgba(255,255,255,0.08);
+  stroke-width: 1;
+}
+
+.via-rings circle {
+  fill: rgba(9, 10, 13, 0.95);
+  stroke: rgba(255, 74, 92, 0.7);
+  stroke-width: 2;
+}
+
+.vias circle {
+  fill: #ff4659;
+  opacity: 0.9;
   animation: pulse 2.8s ease-in-out infinite;
 }
 
