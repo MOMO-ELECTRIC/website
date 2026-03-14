@@ -365,12 +365,27 @@ button:active,
 }
 
 html[lang="en"] .hero-copy-default h1 {
-  max-width: 10ch;
+  max-width: none;
   white-space: normal;
   overflow-wrap: normal;
   word-break: normal;
-  text-wrap: balance;
+  text-wrap: initial;
   margin-top: 10px;
+}
+
+html[lang="en"] .hero-copy-default h1 .hero-title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+html[lang="en"] .hero-copy-default h1 .hero-title-line-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.22em;
+}
+
+html[lang="en"] .hero-copy-default h1 .hero-title-space {
+  display: inline;
 }
 
 .eyebrow {
@@ -978,6 +993,23 @@ h1 {
     overflow-wrap: anywhere;
     word-break: break-word;
     text-wrap: balance;
+  }
+
+  html[lang="en"] .hero-copy-default h1 {
+    margin-top: 6px;
+  }
+
+  html[lang="en"] .hero-copy-default h1 .hero-title-line-top {
+    display: block;
+    white-space: normal;
+  }
+
+  html[lang="en"] .hero-copy-default h1 .hero-title-word {
+    display: block;
+  }
+
+  html[lang="en"] .hero-copy-default h1 .hero-title-space {
+    display: none;
   }
 
   .panel-card h2 {

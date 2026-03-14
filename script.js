@@ -69,7 +69,7 @@ const i18n = {
     navRebate: 'Free Panel Upgrade',
     navContact: 'Get a Quote',
     eyebrow: 'CSLB LICENSE #1147309',
-    heroTitle: 'We Energize SoCal',
+    heroTitle: 'We Energize|So-Cal',
     heroText: 'MOMO Electrical Services LLC provides professional electrical solutions for homes and businesses, with a focus on energy storage systems, panel upgrades, residential electrical services, and commercial electrical services.',
     ctaCall: 'Get a Quote Now',
     ctaRebate: 'Learn About SCE Free Panel Upgrade',
@@ -141,7 +141,14 @@ function applyLang(lang) {
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n;
     const value = dict[attrMap[key] || key];
-    if (value) el.textContent = value;
+    if (!value) return;
+    if (key === 'heroTitle' && lang === 'en') {
+      const [top = 'We Energize', bottom = 'So-Cal'] = value.split('|');
+      const [word1 = 'We', word2 = 'Energize'] = top.split(' ');
+      el.innerHTML = `<span class="hero-title-line hero-title-line-top"><span class="hero-title-word">${word1}</span><span class="hero-title-space"> </span><span class="hero-title-word">${word2}</span></span><span class="hero-title-line hero-title-line-bottom">${bottom}</span>`;
+      return;
+    }
+    el.textContent = value;
   });
   document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
     const key = el.dataset.i18nPlaceholder;
