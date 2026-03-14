@@ -1,7 +1,7 @@
 const i18n = {
   zh: {
     brandTag: '持证电力承包商 · Southern California',
-    navServices: '主营业务',
+    navServices: '首页',
     navRebate: '免费电箱升级',
     navContact: '联系我们',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
@@ -60,7 +60,7 @@ const i18n = {
   },
   en: {
     brandTag: 'Licensed Electrical Contractor · Southern California',
-    navServices: 'Services',
+    navServices: 'Home',
     navRebate: 'Free Panel Upgrade',
     navContact: 'Get a Quote',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
@@ -195,6 +195,15 @@ document.querySelectorAll('.nav-pill').forEach((btn) => {
     document.getElementById('quoteName')?.focus();
   });
 });
+
+const homeRebateCta = document.getElementById('homeRebateCta');
+if (homeRebateCta) {
+  homeRebateCta.addEventListener('click', (event) => {
+    event.preventDefault();
+    activatePanel('rebate');
+    document.querySelector('[data-hero-copy="rebate"]')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
 
 const quoteForm = document.getElementById('quoteForm');
 if (quoteForm) {
