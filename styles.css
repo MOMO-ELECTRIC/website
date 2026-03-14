@@ -953,14 +953,23 @@ h1 {
     padding: 22px;
   }
 
+  .hero-copy-default h1,
+  .panel-card h2,
+  [data-panel-content="services"] h2,
+  [data-panel-content="contact"] h2 {
+    max-width: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-wrap: balance;
+  }
+
   .panel-card h2 {
     font-size: clamp(1.3rem, 7vw, 1.9rem);
-    max-width: none;
   }
 
   [data-panel-content="contact"] h2 {
     font-size: clamp(1.1rem, 5.6vw, 1.45rem);
-    white-space: nowrap;
   }
 
   .contact-layout-grid,
