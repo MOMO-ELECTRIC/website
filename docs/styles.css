@@ -370,6 +370,7 @@ html[lang="en"] .hero-copy-default h1 {
   overflow-wrap: normal;
   word-break: normal;
   text-wrap: balance;
+  margin-top: 10px;
 }
 
 .eyebrow {
