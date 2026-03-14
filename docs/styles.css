@@ -445,6 +445,12 @@ h1 {
   max-width: 14ch;
 }
 
+[data-panel-content="services"] h2 {
+  max-width: none;
+  font-size: clamp(1.28rem, 2vw, 1.86rem);
+  letter-spacing: 0.04em;
+}
+
 [data-panel-content="contact"] h2 {
   max-width: none;
   white-space: nowrap;
