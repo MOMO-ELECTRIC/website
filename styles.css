@@ -364,6 +364,14 @@ button:active,
   white-space: nowrap;
 }
 
+html[lang="en"] .hero-copy-default h1 {
+  max-width: 10ch;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: balance;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   text-transform: uppercase;

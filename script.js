@@ -69,7 +69,7 @@ const i18n = {
     navRebate: 'Free Panel Upgrade',
     navContact: 'Get a Quote',
     eyebrow: 'CSLB LICENSE #1147309',
-    heroTitle: 'We Energize So-Cal',
+    heroTitle: 'We Energize SoCal',
     heroText: 'MOMO Electrical Services LLC provides professional electrical solutions for homes and businesses, with a focus on energy storage systems, panel upgrades, residential electrical services, and commercial electrical services.',
     ctaCall: 'Get a Quote Now',
     ctaRebate: 'Learn About SCE Free Panel Upgrade',
