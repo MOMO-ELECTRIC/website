@@ -22,6 +22,37 @@ body {
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 
+button,
+.panel-link {
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button::before,
+.panel-link::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 18%, rgba(255,255,255,0.22) 50%, rgba(255,255,255,0) 82%);
+  transform: translateX(-135%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.55s ease, opacity 0.28s ease;
+}
+
+button:hover::before,
+.panel-link:hover::before {
+  transform: translateX(135%);
+  opacity: 1;
+}
+
+button:active,
+.panel-link:active {
+  transform: translateY(1px) scale(0.985);
+}
+
 .app-shell {
   position: relative;
   min-height: 100vh;
@@ -158,7 +189,8 @@ button { font: inherit; }
   justify-content: center;
   gap: 5px;
   flex-direction: column;
-  transition: 0.2s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  transition: transform 0.16s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .menu-toggle span {
@@ -173,6 +205,11 @@ button { font: inherit; }
 .menu-toggle.is-open {
   border-color: rgba(255,255,255,0.22);
   background: rgba(216, 31, 50, 0.14);
+  box-shadow: 0 0 0 1px rgba(255, 100, 117, 0.18), 0 16px 32px rgba(130, 10, 26, 0.28);
+}
+
+.menu-toggle:active {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(255,255,255,0.05);
 }
 
 .menu-toggle.is-open span:nth-child(1) {
@@ -201,19 +238,26 @@ button { font: inherit; }
 .nav-pill,
 .lang-toggle {
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
   color: var(--text);
   border-radius: 999px;
   padding: 10px 16px;
   cursor: pointer;
-  transition: 0.2s ease;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 10px 22px rgba(0, 0, 0, 0.16);
+  transition: transform 0.16s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-pill:hover,
 .lang-toggle:hover,
 .nav-pill.is-active {
   border-color: rgba(255,255,255,0.22);
-  background: rgba(216, 31, 50, 0.14);
+  background: linear-gradient(180deg, rgba(255, 87, 107, 0.22), rgba(216, 31, 50, 0.10));
+  box-shadow: 0 0 0 1px rgba(255, 98, 116, 0.14), 0 14px 28px rgba(124, 10, 26, 0.26);
+}
+
+.nav-pill:active,
+.lang-toggle:active {
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.24), 0 6px 14px rgba(0, 0, 0, 0.16);
 }
 
 .hero-layout {
@@ -330,9 +374,24 @@ h1 {
 .panel-link {
   display: inline-block;
   margin-top: 16px;
-  font-size: 1.1rem;
+  padding: 12px 18px;
+  font-size: 1.02rem;
   color: #fff;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 12px 24px rgba(0, 0, 0, 0.16);
+  transition: transform 0.16s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.panel-link:hover {
+  border-color: rgba(255,255,255,0.26);
+  background: linear-gradient(180deg, rgba(255, 87, 107, 0.22), rgba(216, 31, 50, 0.11));
+  box-shadow: 0 0 0 1px rgba(255, 98, 116, 0.14), 0 16px 30px rgba(124, 10, 26, 0.24);
+}
+
+.panel-link:active {
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.24), 0 6px 14px rgba(0, 0, 0, 0.16);
 }
 
 .panel-note {
