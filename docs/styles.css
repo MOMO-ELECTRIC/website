@@ -331,7 +331,8 @@ h1 {
 }
 
 .hero-actions,
-.service-grid {
+.service-grid,
+.hero-meta-inline {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -344,10 +345,22 @@ h1 {
 
 .hero-actions { margin-top: 28px; }
 .hero-meta {
-  margin-top: 22px;
-  padding: 18px 0 0;
+  margin-top: 18px;
+  padding-top: 16px;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+
+.hero-meta.hero-meta-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.hero-meta.hero-meta-inline .meta-chip {
+  flex: 1 1 0;
+  text-align: center;
+}
+
 .service-grid { margin-top: 18px; }
 
 .cta-primary,
@@ -399,31 +412,8 @@ h1 {
   padding: 10px 14px;
 }
 
-.meta-license-chip {
-  background: linear-gradient(135deg, rgba(255, 74, 97, 0.2), rgba(116, 16, 30, 0.28));
-  border-color: rgba(255, 116, 134, 0.28);
-  box-shadow: 0 0 0 1px rgba(255, 96, 117, 0.12), 0 12px 24px rgba(92, 10, 22, 0.16);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.credential-card {
-  display: grid;
-  gap: 6px;
-  padding: 14px 16px;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
+.hero-meta-inline .meta-chip {
   background: rgba(255,255,255,0.035);
-}
-
-.credential-card strong {
-  font-size: 0.95rem;
-}
-
-.credential-card span {
-  color: var(--muted);
-  line-height: 1.55;
-  font-size: 0.94rem;
 }
 
 .service-chip {
@@ -863,11 +853,16 @@ h1 {
 
   .service-chip,
   .cta-primary,
-  .cta-secondary,
-  .meta-license-chip {
+  .cta-secondary {
     width: 100%;
     min-width: 100%;
     justify-content: center;
+    text-align: center;
+  }
+
+  .hero-meta-inline .meta-chip {
+    width: calc(33.333% - 7px);
+    min-width: calc(33.333% - 7px);
     text-align: center;
   }
 
