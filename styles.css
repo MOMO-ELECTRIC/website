@@ -886,7 +886,7 @@ h1 {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 980px) {
   .app-shell {
     padding:
       calc(18px + env(safe-area-inset-top, 0px))

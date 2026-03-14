@@ -154,7 +154,7 @@ function syncCircuitBackgroundScale() {
   if (!circuitBgSvg) return;
   circuitBgSvg.setAttribute(
     'preserveAspectRatio',
-    window.innerWidth <= 720 ? 'xMidYMid meet' : 'xMidYMid slice'
+    window.innerWidth <= 980 ? 'xMidYMid meet' : 'xMidYMid slice'
   );
 }
 
