@@ -5,7 +5,7 @@ const i18n = {
     navRebate: '补贴入口',
     navContact: '联系我们',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
-    heroTitle: '点亮南加州',
+    heroTitle: '助力点亮南加州',
     heroText: 'MOMO Electrical Services LLC 为住宅与商业客户提供专业电力解决方案，专注于储能系统、配电箱升级、住宅电力服务和商业电力服务。',
     ctaCall: '立即获取报价',
     ctaRebate: '进入 SCE / EV 补贴入口',
