@@ -3,194 +3,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MOMO Electrical Services | EV Charger & Panel Upgrade</title>
-  <meta name="description" content="MOMO Electrical Services LLC 提供 EV charger 安装、配电箱升级、permit 协助与施工服务。静态官网，可直接部署到 GitHub Pages。">
-  <meta property="og:title" content="MOMO Electrical Services">
-  <meta property="og:description" content="EV charger installation, panel upgrade, permit support, and residential electrical work.">
-  <meta property="og:type" content="website">
+  <title>MOMO Electrical Services LLC</title>
+  <meta name="description" content="MOMO Electrical Services LLC — Energy Storage System, Residential Electrical Services, Panel Upgrade, Commercial Electrical Services, and EV Rebate support.">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top">
-        <span class="brand-mark">M</span>
-        <span>
-          <strong>MOMO Electrical</strong>
-          <small>Licensed C-10 Contractor</small>
-        </span>
-      </a>
-      <nav>
-        <a href="#services">服务</a>
-        <a href="#process">流程</a>
-        <a href="#projects">项目</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-sm">联系</a>
+  <div class="app-shell">
+    <div class="circuit-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="lineGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6a0f17" />
+            <stop offset="50%" stop-color="#ff3347" />
+            <stop offset="100%" stop-color="#6a0f17" />
+          </linearGradient>
+          <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff5063" stop-opacity="1" />
+            <stop offset="100%" stop-color="#ff5063" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <g class="circuit-lines">
+          <path d="M0 160 H360 V280 H620 V210 H980 V360 H1440" />
+          <path d="M0 520 H260 V430 H510 V620 H860 V510 H1440" />
+          <path d="M120 850 V640 H420 V700 H760 V610 H1010 V760 H1330" />
+          <path d="M230 0 V180 H520 V120 H790 V260 H1180 V110 H1440" />
+          <path d="M870 900 V760 H1110 V640 H1440" />
+        </g>
+        <g class="nodes">
+          <circle cx="360" cy="280" r="10" />
+          <circle cx="620" cy="210" r="10" />
+          <circle cx="980" cy="360" r="10" />
+          <circle cx="510" cy="620" r="10" />
+          <circle cx="860" cy="510" r="10" />
+          <circle cx="760" cy="610" r="10" />
+          <circle cx="1110" cy="640" r="10" />
+          <circle cx="1180" cy="110" r="10" />
+        </g>
+        <g class="glows">
+          <circle cx="360" cy="280" r="34" />
+          <circle cx="860" cy="510" r="42" />
+          <circle cx="1180" cy="110" r="38" />
+        </g>
+      </svg>
+    </div>
+
+    <header class="topbar">
+      <div class="brand">
+        <img src="./images/momo-logo.jpg" alt="MOMO logo" class="brand-logo">
+        <div>
+          <strong>MOMO Electrical Services LLC</strong>
+          <small data-i18n="brandTag">Licensed Contractor · Southern California</small>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Primary">
+        <button class="nav-pill is-active" data-panel="services" data-i18n="nav.services">主营业务</button>
+        <button class="nav-pill" data-panel="rebate" data-i18n="nav.rebate">EV Rebate</button>
+        <button class="nav-pill" data-panel="contact" data-i18n="nav.contact">联系方式</button>
       </nav>
-    </div>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">EV CHARGER · PANEL UPGRADE · PERMIT SUPPORT</p>
-          <h1>专业、清晰、能落地的家用电力升级服务</h1>
-          <p class="lead">
-            MOMO Electrical Services LLC 专注于住宅配电箱升级、EV Charger 安装、施工协调与资料准备，
-            服务洛杉矶、圣盖博谷和 Inland Empire 周边业主。
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#contact">获取报价</a>
-            <a class="btn btn-ghost" href="#projects">查看案例</a>
-          </div>
-          <ul class="hero-points">
-            <li>EV Charger 安装</li>
-            <li>200A Panel Upgrade</li>
-            <li>Permit / Inspection 配合</li>
-            <li>资料整理与项目推进</li>
+      <div class="lang-wrap">
+        <button class="lang-toggle" type="button" id="langToggle">EN / 中文</button>
+      </div>
+    </header>
+
+    <main class="hero-layout">
+      <section class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">POWERING HOMES, BUSINESSES, AND FUTURE ENERGY</p>
+        <h1 data-i18n="heroTitle">专业、清晰、可信赖的电力解决方案</h1>
+        <p class="hero-text" data-i18n="heroText">MOMO Electrical Services LLC 专注于储能系统、住宅电力服务、配电箱升级和商业电力服务。页面保留独立 EV Rebate 入口，让主营业务和补贴申请逻辑清晰分开。</p>
+
+        <div class="hero-meta">
+          <span class="meta-chip" data-i18n="metaLicense">CSLB LICENSE #1147309</span>
+          <span class="meta-chip" data-i18n="metaSce">SCE Certified</span>
+          <span class="meta-chip" data-i18n="metaTesla">Tesla Certified</span>
+          <span class="meta-chip" data-i18n="metaAnker">Anker Certified</span>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-chip" data-i18n="svc1">Energy Storage System</div>
+          <div class="service-chip" data-i18n="svc2">Residential Electrical Services</div>
+          <div class="service-chip" data-i18n="svc3">Panel Upgrade</div>
+          <div class="service-chip" data-i18n="svc4">Commercial Electrical Services</div>
+        </div>
+      </section>
+
+      <aside class="feature-panel">
+        <section class="panel-card is-active" data-panel-content="services">
+          <p class="panel-kicker" data-i18n="panelServicesKicker">CORE SERVICES</p>
+          <h2 data-i18n="panelServicesTitle">主营业务聚焦在真正有转化价值的电力服务</h2>
+          <ul class="panel-list">
+            <li data-i18n="panelServicesItem1">储能系统设计与安装，适配家庭能源升级需求</li>
+            <li data-i18n="panelServicesItem2">住宅电力服务，处理新增回路、日常配电与系统优化</li>
+            <li data-i18n="panelServicesItem3">Panel Upgrade，提升容量、安全性和未来扩展能力</li>
+            <li data-i18n="panelServicesItem4">商业电力服务，强调现场执行与项目配合</li>
           </ul>
-        </div>
-        <aside class="hero-card">
-          <h2>快速信息</h2>
-          <dl>
-            <div><dt>公司</dt><dd>MOMO Electrical Services LLC</dd></div>
-            <div><dt>执照</dt><dd>California C-10 Contractor</dd></div>
-            <div><dt>电话</dt><dd><a href="tel:+16262471135">626-247-1135</a></dd></div>
-            <div><dt>邮箱</dt><dd><a href="mailto:tex@momoelec.com">tex@momoelec.com</a></dd></div>
-            <div><dt>服务内容</dt><dd>EV / Panel / Residential Electrical</dd></div>
+        </section>
+
+        <section class="panel-card" data-panel-content="rebate">
+          <p class="panel-kicker" data-i18n="panelRebateKicker">EV REBATE</p>
+          <h2 data-i18n="panelRebateTitle">补贴申请单独成页，不和主营业务混在一起</h2>
+          <p data-i18n="panelRebateText">官网主页面负责品牌、执照与业务说明；EV Rebate 则单独保留专门入口，方便客户直接进入表单。</p>
+          <a class="panel-link" href="https://scerebate.momoelec.com">scerebate.momoelec.com</a>
+          <div class="panel-note" data-i18n="panelRebateNote">建议后续将这个入口做成主站顶部固定 Tab 与独立落地页。</div>
+        </section>
+
+        <section class="panel-card" data-panel-content="contact">
+          <p class="panel-kicker" data-i18n="panelContactKicker">CONTACT</p>
+          <h2 data-i18n="panelContactTitle">让客户一眼就知道你是谁、做什么、怎么联系</h2>
+          <dl class="contact-list">
+            <div>
+              <dt data-i18n="contactCompany">Company</dt>
+              <dd>MOMO Electrical Services LLC</dd>
+            </div>
+            <div>
+              <dt data-i18n="contactOwner">Owner / Founder</dt>
+              <dd>Yixiao Wang</dd>
+            </div>
+            <div>
+              <dt data-i18n="contactPhone">Phone</dt>
+              <dd><a href="tel:+16262471135">626-247-1135</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="contactEmail">Email</dt>
+              <dd><a href="mailto:tex@momoelec.com">tex@momoelec.com</a></dd>
+            </div>
           </dl>
-        </aside>
-      </div>
-    </section>
+        </section>
+      </aside>
+    </main>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">SERVICES</p>
-          <h2>我们主要做什么</h2>
-        </div>
-        <div class="cards three">
-          <article class="card">
-            <h3>EV Charger 安装</h3>
-            <p>根据车位位置、电箱条件和走线距离，完成家用 Level 2 充电设备安装与线路配置。</p>
-          </article>
-          <article class="card">
-            <h3>配电箱升级</h3>
-            <p>住宅主电箱升级、容量提升、老旧设备替换，帮助满足 EV 充电与新增负载需求。</p>
-          </article>
-          <article class="card">
-            <h3>Permit / Inspection 配合</h3>
-            <p>协助施工前后资料整理、检查配合与关键文件准备，减少流程上的反复沟通成本。</p>
-          </article>
-        </div>
+    <footer class="site-footer">
+      <div class="footer-left">
+        <span>© MOMO Electrical Services LLC</span>
+        <span data-i18n="footerRight">Single-page bilingual landing concept</span>
       </div>
-    </section>
-
-    <section class="section alt" id="process">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">PROCESS</p>
-          <h2>合作流程</h2>
-        </div>
-        <div class="steps">
-          <article>
-            <span>01</span>
-            <h3>初步沟通</h3>
-            <p>确认地址、现有电箱情况、充电器需求和施工目标。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>现场评估</h3>
-            <p>判断电力容量、线路路径、设备位置以及是否需要 panel upgrade。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>施工与检查</h3>
-            <p>按规范施工，协调 permit / inspection 流程，推进项目完成。</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>资料收口</h3>
-            <p>整理 invoice、inspection、现场照片等资料，便于客户留存或后续申报使用。</p>
-          </article>
-        </div>
+      <div class="footer-right">
+        <a href="https://scerebate.momoelec.com">scerebate.momoelec.com</a>
+        <button class="lang-toggle footer-lang" type="button" id="footerLangToggle">EN / 中文</button>
       </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">PROJECTS</p>
-          <h2>适合展示的项目类型</h2>
-        </div>
-        <div class="cards two">
-          <article class="card project">
-            <h3>Panel Upgrade + EV Charger</h3>
-            <p>适合老房、容量不足、计划安装 Level 2 充电器的家庭。</p>
-            <ul>
-              <li>老旧主电箱更换</li>
-              <li>EV 充电回路新增</li>
-              <li>施工后检查通过</li>
-            </ul>
-          </article>
-          <article class="card project">
-            <h3>Permit + Inspection Ready</h3>
-            <p>适合重视流程清晰、文件齐全、希望项目更省心的客户。</p>
-            <ul>
-              <li>文件整理更清楚</li>
-              <li>项目推进更顺畅</li>
-              <li>后续留档更方便</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="faq">
-      <div class="container narrow">
-        <div class="section-head">
-          <p class="eyebrow">FAQ</p>
-          <h2>常见问题</h2>
-        </div>
-        <div class="faq-list">
-          <details>
-            <summary>我家适不适合装 EV Charger？</summary>
-            <p>要看现有配电箱容量、停车位置、走线路径和目标充电设备。很多项目需要先做现场评估。</p>
-          </details>
-          <details>
-            <summary>一定要升级 200A panel 吗？</summary>
-            <p>不一定。要根据房屋现有负载、主电箱条件和新增设备需求来判断。</p>
-          </details>
-          <details>
-            <summary>你们会协助 permit 和 inspection 吗？</summary>
-            <p>会。我们可以配合施工流程与关键文件准备，让整体推进更顺畅。</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container contact-box">
-        <div>
-          <p class="eyebrow">CONTACT</p>
-          <h2>准备开始项目？</h2>
-          <p>把地址、现有电箱照片和需求发过来，我们可以先做初步判断。</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn" href="tel:+16262471135">626-247-1135</a>
-          <a class="btn btn-ghost" href="mailto:tex@momoelec.com">tex@momoelec.com</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> MOMO Electrical Services LLC</p>
-      <p>Built as a static site for GitHub Pages</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="./script.js"></script>
 </body>

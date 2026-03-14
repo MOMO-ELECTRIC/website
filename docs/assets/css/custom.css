@@ -1,0 +1,232 @@
+:root {
+  --momo-red: #cf1f2e;
+  --momo-red-dark: #a31320;
+  --momo-dark: #121212;
+  --momo-soft: rgba(255,255,255,0.08);
+}
+
+#header nav .lang-toggle {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.2rem 0.85rem;
+  margin-right: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#header.alt nav .lang-toggle {
+  border-color: rgba(255,255,255,0.3);
+}
+
+.brand-logo-wrap {
+  background: rgba(255,255,255,0.95);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+#banner {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(207,31,46,0.30), transparent 26%),
+    radial-gradient(circle at 82% 18%, rgba(207,31,46,0.18), transparent 22%),
+    linear-gradient(135deg, #111111 0%, #171717 36%, #25080d 68%, #111111 100%);
+}
+
+#banner:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.08));
+  pointer-events: none;
+}
+
+#banner:after {
+  content: '';
+  position: absolute;
+  right: -8rem;
+  top: -6rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(207,31,46,0.22) 0%, rgba(207,31,46,0.08) 45%, transparent 70%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+#banner > .inner {
+  position: relative;
+  z-index: 1;
+}
+
+.quick-badges,
+.service-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.25rem 0 0;
+}
+
+.quick-badges {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.quick-badges li,
+.service-list li {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+}
+
+.service-list li {
+  display: inline-block;
+  margin: 0 0.6rem 0.75rem 0;
+  border-radius: 0.5rem;
+}
+
+.button.primary,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: none !important;
+}
+
+.button.primary,
+.button.special,
+a.special {
+  background-color: var(--momo-red) !important;
+  color: #fff !important;
+}
+
+.button.primary:hover,
+.button.special:hover,
+a.special:hover {
+  background-color: var(--momo-red-dark) !important;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.contact-card {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  background: rgba(255,255,255,0.03);
+}
+
+.footer-lang-wrap {
+  margin: 1rem 0 1.5rem;
+}
+
+.footer-lang {
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #fff;
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+}
+
+.simple-contact li a {
+  border-bottom: none;
+}
+
+.wrapper.style1,
+.wrapper.style2,
+.wrapper.style3,
+.wrapper.alt.style1,
+#contact {
+  background-color: #1b1d29 !important;
+}
+
+.wrapper.alt.style1 {
+  background-color: #171924 !important;
+}
+
+.wrapper.style1:before,
+.wrapper.style2:before,
+.wrapper.style3:before,
+.wrapper.alt.style1:before {
+  background-image: linear-gradient(to right, rgba(207,31,46,0.14), rgba(255,255,255,0.02)) !important;
+}
+
+.wrapper.style2 .inner,
+.wrapper.style3 .inner,
+.wrapper.style1 .inner,
+.wrapper.alt.style1 .inner,
+#contact .inner {
+  color: rgba(255,255,255,0.88);
+}
+
+.wrapper.style2 p,
+.wrapper.style3 p,
+.wrapper.style1 p,
+.wrapper.alt.style1 p,
+#contact p,
+#contact li,
+#contact a {
+  color: rgba(255,255,255,0.72) !important;
+}
+
+.wrapper.style2 h2,
+.wrapper.style3 h2,
+.wrapper.style1 h2,
+.wrapper.alt.style1 h2,
+#contact h2,
+#contact h3 {
+  color: #fff !important;
+}
+
+.features article,
+.contact-card {
+  background: rgba(255,255,255,0.03);
+}
+
+@media screen and (max-width: 736px) {
+  .mini-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-badges {
+    flex-direction: column;
+  }
+
+  #header nav .lang-toggle {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
