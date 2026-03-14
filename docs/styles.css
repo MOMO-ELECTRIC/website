@@ -447,8 +447,9 @@ h1 {
 
 [data-panel-content="services"] h2 {
   max-width: none;
-  font-size: clamp(1.28rem, 2vw, 1.86rem);
-  letter-spacing: 0.04em;
+  font-size: clamp(1.22rem, 1.65vw, 1.62rem);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 [data-panel-content="contact"] h2 {
