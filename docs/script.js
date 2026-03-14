@@ -2,11 +2,11 @@ const i18n = {
   zh: {
     brandTag: '持证电力承包商 · Southern California',
     navServices: '主营业务',
-    navRebate: 'EV Rebate',
+    navRebate: 'SCE电箱升级补贴',
     navContact: '联系方式',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
     heroTitle: '专业、清晰、可信赖的电力解决方案',
-    heroText: 'MOMO Electrical Services LLC 专注于储能系统、住宅电力服务、配电箱升级和商业电力服务。页面保留独立 EV Rebate 入口，让主营业务和补贴申请逻辑清晰分开。',
+    heroText: 'MOMO Electrical Services LLC 专注于储能系统、住宅电力服务、配电箱升级和商业电力服务。页面保留独立 SCE电箱升级补贴入口，让主营业务和补贴申请逻辑清晰分开。',
     metaLicense: 'CSLB LICENSE #1147309',
     metaSce: 'SCE 认证',
     metaTesla: 'Tesla 认证',
@@ -21,9 +21,9 @@ const i18n = {
     panelServicesItem2: '住宅电力服务，处理新增回路、日常配电与系统优化',
     panelServicesItem3: 'Panel Upgrade，提升容量、安全性和未来扩展能力',
     panelServicesItem4: '商业电力服务，强调现场执行与项目配合',
-    panelRebateKicker: 'EV REBATE',
-    panelRebateTitle: '补贴申请单独成页，不和主营业务混在一起',
-    panelRebateText: '官网主页面负责品牌、执照与业务说明；EV Rebate 则单独保留专门入口，方便客户直接进入表单。',
+    panelRebateKicker: 'SCE PANEL UPGRADE REBATE',
+    panelRebateTitle: 'SCE电箱升级补贴单独成页，不和主营业务混在一起',
+    panelRebateText: '官网主页面负责品牌、执照与业务说明；SCE电箱升级补贴则单独保留专门入口，方便客户直接进入表单。',
     panelRebateNote: '建议后续将这个入口做成主站顶部固定 Tab 与独立落地页。',
     panelContactKicker: 'CONTACT',
     panelContactTitle: '让客户一眼就知道你是谁、做什么、怎么联系',
@@ -36,7 +36,7 @@ const i18n = {
   en: {
     brandTag: 'Licensed Contractor · Southern California',
     navServices: 'Services',
-    navRebate: 'EV Rebate',
+    navRebate: 'SCE Panel Upgrade Rebate',
     navContact: 'Contact',
     eyebrow: 'POWERING HOMES, BUSINESSES, AND FUTURE ENERGY',
     heroTitle: 'Reliable, clear, and trustworthy electrical solutions',
@@ -111,4 +111,37 @@ document.querySelectorAll('.lang-toggle').forEach((btn) => {
 
 document.querySelectorAll('.nav-pill').forEach((btn) => {
   btn.addEventListener('click', () => activatePanel(btn.dataset.panel));
+});
+
+
+const appShell = document.querySelector('.app-shell');
+const menuToggle = document.getElementById('menuToggle');
+
+function setMenuOpen(open) {
+  if (!appShell || !menuToggle) return;
+  appShell.classList.toggle('nav-open', open);
+  menuToggle.classList.toggle('is-open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+}
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    setMenuOpen(!appShell.classList.contains('nav-open'));
+  });
+}
+
+document.querySelectorAll('.nav-pill').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    if (window.innerWidth <= 820) setMenuOpen(false);
+  });
+});
+
+document.querySelectorAll('.lang-toggle').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    if (window.innerWidth <= 820) setMenuOpen(false);
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 820) setMenuOpen(false);
 });
