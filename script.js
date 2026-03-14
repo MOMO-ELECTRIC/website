@@ -1,6 +1,6 @@
 const i18n = {
   zh: {
-    brandTag: '持证电力承包商 · Southern California',
+    brandTag: '执照电力承包商 · Southern California',
     navServices: '主营业务',
     navRebate: '补贴入口',
     navContact: '联系我们',
@@ -18,7 +18,7 @@ const i18n = {
     svc3: '配电箱升级 Panel Upgrade',
     svc4: '商业电力服务 Commercial Electrical Services',
     panelServicesKicker: 'CORE SERVICES',
-    panelServicesTitle: '围绕真实项目需求打造的专业电力服务',
+    panelServicesTitle: '全栈电力工程服务',
     panelServicesItem1Title: '储能系统',
     panelServicesItem1: '面向现代家庭能源升级需求的储能系统规划与安装。',
     panelServicesItem2Title: '住宅电力服务',
@@ -46,7 +46,7 @@ const i18n = {
     formNeed: '业务需求简介',
     formNeedPlaceholder: '例如：Panel Upgrade、储能系统、住宅电力改造、商业项目等',
     formSubmit: '立即提交询价',
-    footerRight: '持证电力承包商 · 服务 Southern California'
+    footerRight: '执照电力承包商 · 服务 Southern California'
   },
   en: {
     brandTag: 'Licensed Electrical Contractor · Southern California',
@@ -67,7 +67,7 @@ const i18n = {
     svc3: 'Panel Upgrade',
     svc4: 'Commercial Electrical Services',
     panelServicesKicker: 'CORE SERVICES',
-    panelServicesTitle: 'Professional electrical services built for real-world jobs and long-term reliability',
+    panelServicesTitle: 'Full-Stack Electrical Engineering Services',
     panelServicesItem1Title: 'Energy Storage Systems',
     panelServicesItem1: 'Battery storage planning and installation for modern energy resilience and home upgrades.',
     panelServicesItem2Title: 'Residential Electrical',

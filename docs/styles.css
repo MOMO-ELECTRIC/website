@@ -339,8 +339,13 @@ h1 {
 }
 
 .hero-actions { margin-top: 28px; }
-.hero-meta { margin-top: 22px; }
-.service-grid { margin-top: 26px; }
+.hero-meta {
+  margin-top: 24px;
+  padding: 18px 0 18px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.service-grid { margin-top: 18px; }
 
 .cta-primary,
 .cta-secondary,
@@ -389,6 +394,18 @@ h1 {
 .service-chip {
   background: rgba(255,255,255,0.04);
   padding: 10px 14px;
+}
+
+.hero-meta .meta-chip:first-child {
+  background: linear-gradient(135deg, rgba(255, 74, 97, 0.2), rgba(116, 16, 30, 0.28));
+  border-color: rgba(255, 116, 134, 0.28);
+  box-shadow: 0 0 0 1px rgba(255, 96, 117, 0.12), 0 12px 24px rgba(92, 10, 22, 0.16);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero-meta .meta-chip:not(:first-child) {
+  background: rgba(255,255,255,0.035);
 }
 
 .service-chip {
@@ -731,19 +748,27 @@ h1 {
   }
 
   .topbar {
-    grid-template-columns: 1fr auto;
-    align-items: start;
-  }
-
-  .nav-drawer {
-    grid-column: 1 / -1;
-    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
     gap: 14px;
   }
 
-  .topnav,
+  .nav-drawer {
+    display: contents;
+  }
+
+  .topnav {
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .nav-pill,
+  .lang-toggle {
+    padding-inline: 14px;
+  }
+
   .lang-wrap {
-    justify-content: start;
+    justify-self: end;
   }
 
   h1 {
