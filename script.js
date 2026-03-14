@@ -1,6 +1,6 @@
 const i18n = {
   zh: {
-    brandTag: '执照电力承包商 · Southern California',
+    brandTag: '执照电力承包服务商 · Southern California',
     navServices: '首页',
     navRebate: '免费电箱升级',
     navContact: '联系我们',
