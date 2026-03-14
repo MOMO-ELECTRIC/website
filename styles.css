@@ -209,14 +209,13 @@ button:active,
 }
 
 .brand-logo {
-  width: clamp(170px, 26vw, 280px);
-  height: auto;
-  max-height: 72px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  border-radius: 0;
-  background: transparent;
-  padding: 0;
-  box-shadow: none;
+  border-radius: 18px;
+  background: #fff;
+  padding: 6px;
+  box-shadow: var(--shadow);
 }
 
 .menu-toggle {
@@ -933,9 +932,8 @@ h1 {
   }
 
   .brand-logo {
-    width: min(220px, calc(100vw - 110px));
-    height: auto;
-    max-height: 56px;
+    width: 52px;
+    height: 52px;
   }
 
   .hero-layout {
