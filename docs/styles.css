@@ -343,11 +343,13 @@ button:active,
 }
 
 .hero-copy-default,
+.hero-copy-rebate,
 .hero-copy-contact {
   display: none;
 }
 
 .hero-copy-default.is-active,
+.hero-copy-rebate.is-active,
 .hero-copy-contact.is-active {
   display: block;
 }
