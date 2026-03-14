@@ -910,35 +910,30 @@ h1 {
   .circuit-bg::before {
     background:
       repeating-linear-gradient(90deg,
-        transparent 0 52px,
-        rgba(160, 34, 50, 0.13) 52px 54px,
-        transparent 54px 104px),
+        transparent 0 68px,
+        rgba(160, 34, 50, 0.1) 68px 70px,
+        transparent 70px 136px),
       repeating-linear-gradient(0deg,
-        transparent 0 42px,
-        rgba(130, 28, 42, 0.1) 42px 44px,
-        transparent 44px 88px),
+        transparent 0 54px,
+        rgba(130, 28, 42, 0.08) 54px 56px,
+        transparent 56px 112px),
       repeating-linear-gradient(135deg,
-        transparent 0 84px,
-        rgba(170, 40, 58, 0.12) 84px 86px,
-        transparent 86px 170px),
-      repeating-linear-gradient(45deg,
-        transparent 0 110px,
-        rgba(112, 26, 38, 0.08) 110px 112px,
-        transparent 112px 220px),
-      radial-gradient(circle at center, rgba(255, 74, 96, 0.08), transparent 55%);
-    opacity: 0.78;
-    animation: mobile-pcb-drift 18s linear infinite;
+        transparent 0 116px,
+        rgba(170, 40, 58, 0.09) 116px 118px,
+        transparent 118px 236px),
+      radial-gradient(circle at center, rgba(255, 74, 96, 0.06), transparent 55%);
+    opacity: 0.5;
+    animation: mobile-pcb-drift 22s linear infinite;
   }
 
   .circuit-bg::after {
     background:
-      radial-gradient(circle at 12% 18%, rgba(255, 98, 116, 0.42) 0 4px, rgba(14, 17, 24, 0.95) 4.2px 7px, transparent 7.2px),
-      radial-gradient(circle at 76% 14%, rgba(255, 98, 116, 0.38) 0 4px, rgba(14, 17, 24, 0.95) 4.2px 7px, transparent 7.2px),
-      radial-gradient(circle at 88% 44%, rgba(255, 98, 116, 0.38) 0 4px, rgba(14, 17, 24, 0.95) 4.2px 7px, transparent 7.2px),
-      radial-gradient(circle at 24% 62%, rgba(255, 98, 116, 0.34) 0 4px, rgba(14, 17, 24, 0.95) 4.2px 7px, transparent 7.2px),
-      radial-gradient(circle at 68% 78%, rgba(255, 98, 116, 0.4) 0 4px, rgba(14, 17, 24, 0.95) 4.2px 7px, transparent 7.2px),
-      radial-gradient(circle at 16% 88%, rgba(255, 98, 116, 0.34) 0 4px, rgba(14, 17, 24, 0.95) 4.2px 7px, transparent 7.2px);
-    opacity: 0.92;
+      radial-gradient(circle at 12% 18%, rgba(255, 98, 116, 0.28) 0 3.5px, rgba(14, 17, 24, 0.95) 3.7px 6px, transparent 6.2px),
+      radial-gradient(circle at 76% 14%, rgba(255, 98, 116, 0.24) 0 3.5px, rgba(14, 17, 24, 0.95) 3.7px 6px, transparent 6.2px),
+      radial-gradient(circle at 88% 44%, rgba(255, 98, 116, 0.24) 0 3.5px, rgba(14, 17, 24, 0.95) 3.7px 6px, transparent 6.2px),
+      radial-gradient(circle at 24% 62%, rgba(255, 98, 116, 0.22) 0 3.5px, rgba(14, 17, 24, 0.95) 3.7px 6px, transparent 6.2px),
+      radial-gradient(circle at 68% 78%, rgba(255, 98, 116, 0.26) 0 3.5px, rgba(14, 17, 24, 0.95) 3.7px 6px, transparent 6.2px);
+    opacity: 0.56;
   }
 
   .brand {
