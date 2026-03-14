@@ -313,6 +313,11 @@ button:active,
   display: block;
 }
 
+.hero-copy-default h1 {
+  max-width: none;
+  white-space: nowrap;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   text-transform: uppercase;
