@@ -18,6 +18,14 @@ PY
 fi
 CALENDAR_NAME="${CALENDAR_NAME:-MOMO 施工日历}"
 
+if [ ! -f "$TOKEN_FILE" ] && [ -f "$RUNTIME_FILE" ]; then
+  bash /Users/yixiao/.openclaw/workspace/scripts/lark_refresh_user_token.sh >/dev/null
+fi
+
+if [ -f "$RUNTIME_FILE" ]; then
+  bash /Users/yixiao/.openclaw/workspace/scripts/lark_refresh_user_token.sh >/dev/null
+fi
+
 if [ ! -f "$TOKEN_FILE" ]; then
   echo "Token file not found: $TOKEN_FILE" >&2
   exit 1

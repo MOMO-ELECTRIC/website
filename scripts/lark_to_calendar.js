@@ -70,8 +70,8 @@ end tell`;
 }
 
 async function main() {
-  const appId = getField('username');
-  const appSecret = getField('credential');
+  const appId = process.env.LARK_APP_ID || getField('username');
+  const appSecret = process.env.LARK_APP_SECRET || getField('credential');
   const tokenResp = await api('https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal', {
     method: 'POST', headers: { 'Content-Type': 'application/json; charset=utf-8' },
     body: JSON.stringify({ app_id: appId, app_secret: appSecret })
