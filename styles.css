@@ -205,6 +205,7 @@ button:active,
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 14px;
   min-width: 0;
 }
 
@@ -216,6 +217,21 @@ button:active,
   background: #fff;
   padding: 6px;
   box-shadow: var(--shadow);
+}
+
+.brand-copy {
+  min-width: 0;
+}
+
+.brand strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
 }
 
 .menu-toggle {
