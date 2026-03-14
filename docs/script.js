@@ -27,6 +27,15 @@ const i18n = {
     panelServicesItem3: '注重容量、安全性与规范性的配电箱升级，为未来扩展做好准备。',
     panelServicesItem4Title: '商业电力服务',
     panelServicesItem4: '强调现场执行力与项目配合度的商业电力服务。',
+    rebateEyebrow: 'SCE EV CHARGE READY PROGRAM 认证安装商',
+    rebateHeroTitle: '免费升级电箱',
+    rebateHeroText: '面向 SCE 项目的免费电箱升级服务，帮助客户更顺利完成申请、施工与交付。',
+    rebateMeta1: '无障碍申请',
+    rebateMeta1Text: '助您快速获批补贴。',
+    rebateMeta2: '无需自费',
+    rebateMeta2Text: '由 SCE 直接支付工程款。',
+    rebateMeta3: '当日交付',
+    rebateMeta3Text: '不影响夜间用电。',
     panelRebateKicker: 'SCE 免费电箱升级',
     panelRebateTitle: '了解 SCE 免费电箱升级服务',
     panelRebateText: '我们提供面向 SCE 项目的免费电箱升级整体服务，帮助客户更顺利完成从申请到施工交付的全流程。',
@@ -76,6 +85,15 @@ const i18n = {
     panelServicesItem3: 'Capacity, safety, and code-focused panel work prepared for future expansion.',
     panelServicesItem4Title: 'Commercial Electrical',
     panelServicesItem4: 'Practical field execution and dependable coordination for commercial projects.',
+    rebateEyebrow: 'SCE EV CHARGE READY PROGRAM Certified Installer',
+    rebateHeroTitle: 'Free Panel Upgrade',
+    rebateHeroText: 'A complete SCE panel upgrade service that helps customers move smoothly from application through construction and final delivery.',
+    rebateMeta1: 'Accessible application support',
+    rebateMeta1Text: 'Helping you get rebate approval faster.',
+    rebateMeta2: 'No out-of-pocket cost',
+    rebateMeta2Text: 'Project cost is paid directly by SCE.',
+    rebateMeta3: 'Same-day delivery',
+    rebateMeta3Text: 'Designed to avoid affecting nighttime power use.',
     panelRebateKicker: 'SCE FREE PANEL UPGRADE',
     panelRebateTitle: 'Learn about SCE free panel upgrade service',
     panelRebateText: 'We provide a complete service experience for SCE free panel upgrade projects, helping customers move smoothly from application to final delivery.',
@@ -133,7 +151,9 @@ function activatePanel(name) {
   });
 
   const showContactHero = name === 'contact';
-  document.querySelector('[data-hero-copy="default"]')?.classList.toggle('is-active', !showContactHero);
+  const showRebateHero = name === 'rebate';
+  document.querySelector('[data-hero-copy="default"]')?.classList.toggle('is-active', !showContactHero && !showRebateHero);
+  document.querySelector('[data-hero-copy="rebate"]')?.classList.toggle('is-active', showRebateHero);
   document.querySelector('[data-hero-copy="contact"]')?.classList.toggle('is-active', showContactHero);
 }
 
@@ -163,15 +183,16 @@ document.querySelectorAll('.nav-pill').forEach((btn) => {
   btn.addEventListener('click', () => activatePanel(btn.dataset.panel));
 });
 
-const quoteCta = document.getElementById('quoteCta');
-if (quoteCta) {
-  quoteCta.addEventListener('click', (event) => {
+['quoteCta', 'rebateQuoteCta'].forEach((id) => {
+  const cta = document.getElementById(id);
+  if (!cta) return;
+  cta.addEventListener('click', (event) => {
     event.preventDefault();
     activatePanel('contact');
     document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     document.getElementById('quoteName')?.focus();
   });
-}
+});
 
 const quoteForm = document.getElementById('quoteForm');
 if (quoteForm) {
