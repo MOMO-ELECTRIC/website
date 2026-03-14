@@ -535,9 +535,9 @@ h1 {
 
 .contact-combo-card {
   display: inline-grid;
-  grid-template-columns: fit-content(320px) 180px;
-  gap: 24px;
-  align-items: start;
+  grid-template-columns: minmax(220px, max-content) minmax(132px, 145px);
+  gap: 20px;
+  align-items: center;
   justify-content: start;
   justify-items: start;
   padding: 0;
@@ -598,19 +598,22 @@ h1 {
 
 .contact-qr-card {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   justify-self: start;
-  align-self: start;
-  padding: 0;
+  align-self: center;
+  padding: 8px;
   min-height: auto;
   height: auto;
   margin-top: 0;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .contact-qr-image {
   width: 100%;
-  max-width: 145px;
+  max-width: 129px;
   height: auto;
   display: block;
   margin: 0;
