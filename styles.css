@@ -1000,7 +1000,10 @@ h1 {
   }
 
   html[lang="en"] .hero-copy-default h1 .hero-title-line-top {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
     white-space: normal;
   }
 
