@@ -17,16 +17,16 @@ const i18n = {
     svc2: '住宅电力服务 Residential Electrical Services',
     svc3: '配电箱升级 Panel Upgrade',
     svc4: '商业电力服务 Commercial Electrical Services',
-    panelServicesKicker: 'SERVICE FLOW',
+    panelServicesKicker: '服务流程',
     panelServicesTitle: '全栈电力服务',
-    panelServicesItem1Title: 'Estimate',
-    panelServicesItem1: 'On-site assessment, clear scope, and accurate pricing upfront.',
-    panelServicesItem2Title: 'Permitting',
-    panelServicesItem2: 'Hundreds of city permit cases with practical permitting experience.',
-    panelServicesItem3Title: 'Performance',
-    panelServicesItem3: 'High-standard workmanship, code compliance, and strong AHJ inspection readiness.',
-    panelServicesItem4Title: 'Warranty',
-    panelServicesItem4: 'Dependable post-project support with clear warranty coverage.',
+    panelServicesItem1Title: '查勘报价',
+    panelServicesItem1: '现场查勘、范围确认更清楚，前期报价更准确。',
+    panelServicesItem2Title: '报批许可',
+    panelServicesItem2: '具备大量城市 permit 办理经验，熟悉实际报批流程。',
+    panelServicesItem3Title: '施工交付',
+    panelServicesItem3: '坚持高标准施工，严格遵守 code 要求，并具备丰富 AHJ inspection 经验。',
+    panelServicesItem4Title: '质保支持',
+    panelServicesItem4: '项目完成后提供清晰、可靠的 warranty 保障与后续支持。',
     panelServicesItem5Title: '全面 Warranty 保障',
     panelServicesItem5: '项目完成后仍有清晰的后续支持和 warranty 保障，不是做完就消失。',
     panelRebateKicker: 'EV REBATE',
@@ -221,5 +221,5 @@ document.querySelectorAll('.lang-toggle').forEach((btn) => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 820) setMenuOpen(false);
+  if (window.innerWidth > 980) setMenuOpen(false);
 });
