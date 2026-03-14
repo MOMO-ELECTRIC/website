@@ -59,7 +59,7 @@ const i18n = {
     footerRight: '持证电力承包商 · 服务 Southern California'
   },
   en: {
-    brandTag: 'Licensed Electrical Contractor · Southern California',
+    brandTag: 'Licensed Electrical Contractor',
     navServices: 'Home',
     navRebate: 'Free Panel Upgrade',
     navContact: 'Get a Quote',
