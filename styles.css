@@ -997,22 +997,27 @@ h1 {
 
   html[lang="en"] .hero-copy-default h1 {
     margin-top: 6px;
+    white-space: nowrap;
+    font-size: clamp(2rem, 9vw, 3rem);
   }
 
-  html[lang="en"] .hero-copy-default h1 .hero-title-line-top {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    white-space: normal;
+  html[lang="en"] .hero-copy-default h1 .hero-title-line,
+  html[lang="en"] .hero-copy-default h1 .hero-title-line-top,
+  html[lang="en"] .hero-copy-default h1 .hero-title-line-bottom {
+    display: inline;
+    white-space: nowrap;
   }
 
   html[lang="en"] .hero-copy-default h1 .hero-title-word {
-    display: block;
+    display: inline;
   }
 
   html[lang="en"] .hero-copy-default h1 .hero-title-space {
-    display: none;
+    display: inline;
+  }
+
+  html[lang="en"] .hero-copy-default h1 .hero-title-line-bottom::before {
+    content: ' ';
   }
 
   .panel-card h2 {
