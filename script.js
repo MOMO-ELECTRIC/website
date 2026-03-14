@@ -148,8 +148,19 @@ function activatePanel(name) {
 }
 
 const initialLang = localStorage.getItem('momo-lang') || 'zh';
+const circuitBgSvg = document.querySelector('.circuit-bg svg');
+
+function syncCircuitBackgroundScale() {
+  if (!circuitBgSvg) return;
+  circuitBgSvg.setAttribute(
+    'preserveAspectRatio',
+    window.innerWidth <= 720 ? 'xMidYMid meet' : 'xMidYMid slice'
+  );
+}
+
 applyLang(initialLang);
 activatePanel('services');
+syncCircuitBackgroundScale();
 
 document.querySelectorAll('.lang-toggle').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -227,5 +238,6 @@ document.querySelectorAll('.lang-toggle').forEach((btn) => {
 });
 
 window.addEventListener('resize', () => {
+  syncCircuitBackgroundScale();
   if (window.innerWidth > 980) setMenuOpen(false);
 });
